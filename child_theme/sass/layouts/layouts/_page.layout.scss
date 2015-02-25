@@ -1,0 +1,110 @@
+/* uncomment to let grids show up */
+ @include sgs-change('debug', true); 
+ @include add-gutter(2/3);
+ //@include sgs-change('output', 'float'); 
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#page {
+  /* Uncomment background-grid to view grid */
+  #main-wrapper, #footer-top, #footer-bottom {
+	  @include background-grid($color: rgba(102,102,102,.07));
+  }
+}
+
+/* specify columns using grid-span($span,$location) syntax
+	 $span = how many columns does this element span?
+	 $location = which column do I start with? */
+@media (min-width: 40em) {
+	#topbar-wrapper {
+		@include grid-span(12,1);
+	}
+	#main-menu-wrapper {
+		@include grid-span(12,1);
+	}
+	#branding {
+		@include grid-span(2,2);
+	}
+	#menubar-wrapper {
+		@include grid-span(9,4);
+	}
+	#masthead {
+		@include grid-span(12,1);
+	}
+	/*header {
+		@include grid-span(12,1);
+	}*/
+	/*#main-wrapper {
+		@include grid-span(12,1);
+	}*/
+	.not-front main {
+		@include grid-span(10,2);
+	}
+	.front main {
+		@include grid-span(12,1);
+	}
+	#content-top {
+		@include grid-span(12,1);
+		float: none;	
+	}
+	.not-front #content,
+	.not-front #content-bottom {
+		@include grid-span(9,1);
+	}
+	.front #content,
+	.front #content-bottom {
+		@include grid-span(12,1);
+	}
+	/*#sidebar-first {
+		@include grid-span(3,1);
+	}*/
+	#sidebar-second {
+		@include grid-span(3,10);
+	}
+	#footer-wrapper {
+		@include grid-span(12,1);
+	}
+	#footer-top {
+		@include grid-span(12,1);
+	}
+	.region-footer-bottom {
+		@include grid-span(12,1);
+	}
+}
+#main-wrapper {
+	padding-bottom: 4em;
+}
+#footer-wrapper {
+	background: $brand-color-1-light;
+	padding: 2em 0 8em;
+}
+#messages,
+#main-wrapper,
+footer {
+  margin: $page-outside-margin;		
+}
+
+main .block {
+	margin-bottom: $block-margin;
+}
+
+/* normalize header margins in all three columns */
+.region-sidebar-first h2:first-child,
+.region-sidebar-second h2:first-child,
+h1#page-title
+ {
+	margin-top: 0;
+}
+main,
+.region-sidebar-first,
+.region-sidebar-second {
+	padding: 0 0 7em;
+}
+#main-wrapper.masthead {
+	margin-top: -15vw;
+	position: relative;
+	z-index: 2;
+}

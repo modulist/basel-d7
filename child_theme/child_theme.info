@@ -1,0 +1,35 @@
+name = 'Child_Theme'
+description = 'A sample Drupal 7 child theme for the Basel theming framework'
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[topbar]							= 'Top Bar'
+regions[menubar]						= 'Menu Bar'
+regions[masthead]						= 'Masthead'
+regions[header]							= 'Header'
+regions[content_top]				= 'Content top'
+regions[content]						= 'Content'
+regions[content_bottom]			= 'Content bottom'
+regions[sidebar_first]			= 'Sidebar first'
+regions[sidebar_second]			= 'Sidebar second'
+regions[footer_top]					= 'Footer top'
+regions[footer_bottom]			= 'Footer bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[print][] = css/print.css
+;stylesheets[all][] = css/hacks.css
+stylesheets[all][] = css/styles.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+; scripts[] = 'js/colorbox-responsive.js'
+

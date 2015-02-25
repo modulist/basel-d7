@@ -1,0 +1,201 @@
+
+/* Views Galleriffic default css
+ * Based off of css from original: http://www.twospy.com/galleriffic/index.html
+ */
+
+#galleriffic {
+	max-height: 400px;
+	overflow: hidden;
+  width: 100%;
+	
+	.content {
+	  display: block;
+	  float: left;
+	  width: 505px;
+	  a {
+		  text-decoration: none;
+		  color: #fff;  
+		}
+		a:focus, a:hover, a:active {
+		  text-decoration: underline;
+		}
+	}
+	.navigation a {
+	  text-decoration: none;
+	  color: #fff;
+	}
+	#gallery {
+		width: 67%;
+	}
+	
+	#thumbs {
+		background: #000;
+		color: #fff;
+	  float: left;
+		height: 100%;
+		position: relative;
+		text-align: center;
+	  width: 33%;
+	}
+	ul.thumbs {
+		@include clearfix;
+	  margin: 0 auto;
+	  padding: 24px;
+	  li {
+		  float: left;
+		  padding: 0;
+		  margin: 0;
+		  list-style: none;
+		}
+	}
+	a.thumb {
+	  border: none;
+	  display: block;
+		margin: 0;
+	  padding: 3px;
+		&:hover {
+		  background: $brand-color-3;
+		}
+		&:focus {
+		  background: $brand-color-2;
+		  outline: none;
+		}
+	.selected a.thumb {
+		  background: $brand-color-2;
+		}
+	}
+	
+	.loader {
+	  //background-image: url('/sites/loader.gif');
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  width: 510px;
+	  height: 350px
+	}
+	#slideshow-container {
+	  position: relative;
+	  clear: both;
+	  padding: 0;
+	}
+	.controls {
+		position: absolute;
+			bottom: 0px;
+			right: 20px;
+		a {
+		  padding: 0 5px;
+		}
+		.ss-controls {
+		  float: left;
+		}
+		.nav-controls {
+		  float: right;
+		}
+	}
+	.slideshow {
+	  position: relative;
+		img {
+		  border: none;
+		  display: block;
+		}
+	}
+	.download {
+	  float: right;
+	}
+	.image-title {
+	  font-weight: bold;
+	  font-size: 1.4em;
+	}
+	.image-desc {
+	  line-height: 1.3em;
+	  padding-top: 12px;
+	}
+	.pagination {
+	  clear: both;
+	}
+	.navigation.top {
+	  margin-bottom: 12px;
+	  height: 11px;
+	}
+	.navigation.bottom {
+	  margin-top: 12px;
+	}
+	.pagination a, .pagination span.current {
+	  display: block;
+	  float: left;
+	  margin-right: 2px;
+	  padding: 4px 7px 2px 7px;
+	  border: 1px solid #ccc;
+	}
+	.pagination a:hover {
+	  background-color: #eee;
+	  text-decoration: none;
+	}
+	.pagination span.current {
+	  font-weight: bold;
+	  background-color: #000;
+	  border-color: #000;
+	  color: #fff;
+	}
+	.slideshow,
+	.loader,
+	.slideshow a.advance-link,
+	.caption-container {
+	  clear: both;
+	}
+	.slideshow-container {
+	  position: relative;
+	  clear: both;
+	  float: left;
+	}
+	.loader {
+	  position: absolute;
+	  background-image: url('loader.gif');
+	  background-repeat: no-repeat;
+	  background-position: center;
+	}
+	.slideshow span.image-wrapper {
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	}
+	.slideshow a.advance-link {
+	  display: block;
+	  line-height: 402px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	  text-align: center;
+	  display: block;
+	}
+	.slideshow a.advance-link img {
+	  padding: 2px;
+	  border: 1px solid #ccc;
+	}
+	.slideshow a.advance-link:hover,
+	.slideshow a.advance-link:active,
+	.slideshow a.advance-link:visited {
+	  text-decoration: none;
+	}
+	#caption {
+	  position: relative;
+	  margin: 0 7px 0 0;
+	}
+	.caption {
+	  padding: 0 5px;
+	}
+	span.image-wrapper {
+	  top: 0;
+	  width: 100%;
+	  position: absolute;
+	}
+	span.image-caption {
+	  top: 0;
+	  left: 0;
+	  border: 1px solid #ccc;
+	  background-color: #eaeaea;
+	  width: 100%;
+	  position: absolute;
+	  display: block;
+	}
+	.ellipsis {
+	  float: left;
+	}
+}
+

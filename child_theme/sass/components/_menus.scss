@@ -1,0 +1,166 @@
+// place navigation styles here
+
+
+// vertical / local menus
+ul.menu { // exclude Drupal toolbar menu
+	margin: 0;
+	padding: 0;
+	ul {
+		margin-left: $vertmenu-indent;
+		padding: 0;
+	}
+	li {
+		line-height: $line-height-headers;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		&.leaf {
+			list-style-image: none;
+		}
+		a {
+			color: $brand-color-2;
+			display: block;
+			margin-left: ($vertmenu-indent * -.5);
+			padding: $vertmenu-padding-vert ($vertmenu-indent/2);
+			&:hover {
+				background: $vertmenu-bg-active;
+				color: $brand-color-2-light;			
+			}
+			&:active {
+				background: $vertmenu-bg-hover;
+				color: $brand-color-2-dark;
+			}
+			&.active:after {
+	     content: '\00a0\203a';
+			}
+		}
+		.active {
+	    color: $black;
+    }
+	}
+	.expanded, .collapsed {
+		list-style-image: none; //override drupal system
+	}
+}
+
+// horizontal navigation
+header {
+	ul.menu {
+		background-color: transparent;
+		margin: 0;
+	  padding: 0;
+	  width: 100%;
+		li {
+			background-color: transparent;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			&.expanded {
+			background: url('/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;				
+			}
+		}
+		a {
+			color: $brand-color-2;
+			display: block;
+			margin: 0;
+			padding: $menu-padding-vert $menu-padding-horiz;
+			&:hover {
+				background-color: $menu-bg-hover;
+				color: $menu-text-hover;
+				transition: All 0.5s ease;
+			}
+			&.active {
+				background-color: $menu-bg-active;
+				color: $menu-text-active;
+				&:after {
+					content: none;
+				}
+			}
+		}
+		> li {
+			float: left;
+		}
+		ul {
+		  border: 0;
+		  display: block;
+		  margin: 0;
+		  padding: 0;
+		  position: absolute;
+		  top: (2*$menu-padding-vert)+$line-height-headers;
+		  	z-index: 1000;
+		  //visibility: hidden;
+		  li {
+			  float: none;
+			  margin: 0;
+			  //width: $vertmenu-submenu-width;
+				/*ul {
+					position: absolute;
+						left: $vertmenu-submenu-width;
+						top: 0;
+				}*/
+		  }
+	  }
+		&:after {
+			@include clearfix;	
+		}
+	}
+}
+
+// superfish overwrites
+.superfish {
+	box-sizing: content-box;
+}
+.sf-menu ul { //fixes missing third level bug in Chrome
+	overflow: visible !important;
+}
+.sf-menu a.sf-with-ul {
+	padding-right: 1.5em;
+}
+.sf-sub-indicator {
+	right: .25em;
+}
+
+
+// Tabs
+ul.primary {
+  border-bottom: 1px solid #ddd;
+  @include clearfix;
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+    padding: 0;
+
+    // Actual tabs (as links)
+    > a {
+	    background: #ddd;
+	    color: $link-text;
+      margin-right: 2px;
+      line-height: $line-height-p;
+      //border: 1px solid transparent;
+      border-radius: $form-input-radius $form-input-radius 0 0;
+      &:hover {
+        //border-color: #ccc #ccc #ccc;
+        color: $link-text-hover;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $menu-text;
+        background-color: $menu-bg-hover;
+        border: none;
+        cursor: default;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  /*&.nav-justified {
+    @extend .nav-justified;
+    @extend .nav-tabs-justified;
+  }*/
+}
