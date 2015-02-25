@@ -1,0 +1,82 @@
+/* uncomment to let grids show up */
+ @include sgs-change('debug', true); 
+ @include add-gutter(2/3);
+ //@include sgs-change('output', 'float'); 
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#page {
+  /* Uncomment background-grid to view grid */
+  header, #main-wrapper, footer {
+	  //@include background-grid($color: rgba(102,102,102,.07));
+  }
+}
+
+/* specify columns using grid-span($span,$location) syntax
+	 $span = how many columns does this element span?
+	 $location = which column do I start with? */
+@media (min-width: 40em) {
+	.region-branding-first {
+		@include grid-span(3,1);
+	}
+	.region-branding-second {
+		@include grid-span(9,4);
+	}
+	main {
+		@include grid-span(6,4);
+	}
+	.region-sidebar-first {
+		@include grid-span(3,1);
+	}
+	.region-sidebar-second {
+		@include grid-span(3,10);
+	}
+	.region-footer-first {
+		@include grid-span(3,1);
+	}
+	.region-footer-second {
+		@include grid-span(3,4);
+	}
+	.region-footer-third {
+		@include grid-span(3,7);
+	}
+	.region-footer-fourth {
+		@include grid-span(3,10);
+	}
+	.region-footer-bottom {
+		@include grid-span(3,4);
+	}
+}
+main {
+	padding-bottom: 4em;
+}
+#footer-wrapper {
+	//background: $brand-color-1-light;
+	padding: 2em 0 8em;
+}
+header,
+#messages,
+#main-wrapper,
+#footer-wrapper {
+  margin: $page-outside-margin;		
+}
+
+.block {
+	margin-bottom: $block-margin;
+}
+
+/* normalize header margins in all three columns */
+.region-sidebar-first h2:first-child,
+.region-sidebar-second h2:first-child,
+h1#page-title
+ {
+	margin-top: 0;
+}
+main,
+.region-sidebar-first,
+.region-sidebar-second {
+	padding: 4em 0 7em;
+}

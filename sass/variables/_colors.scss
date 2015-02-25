@@ -1,0 +1,104 @@
+// Site-wide colors
+$white: #fff;
+$black: #000;
+$crimson: #900;
+
+
+// Brand colors
+$brand-color-1: 								#DADADB;
+$brand-color-1-dark:						darken($brand-color-1, 10%);
+$brand-color-1-light:						lighten($brand-color-1, 10%);
+
+$brand-color-2: 								#4D355D;
+$brand-color-2-dark:						darken($brand-color-2, 10%);
+$brand-color-2-light:						lighten($brand-color-2, 10%);
+
+$brand-color-3: 								#00618B;
+$brand-color-3-dark:						darken($brand-color-3, 10%);
+$brand-color-3-light:						lighten($brand-color-3, 10%);
+
+$brand-color-4: 								#d9534f;
+$brand-color-4-dark:						darken($brand-color-4, 10%);
+$brand-color-4-light:						lighten($brand-color-4, 10%);
+
+$brand-color-5: 								#f0ad4e;
+$brand-color-5-dark:						darken($brand-color-2, 10%);
+$brand-color-5-light:						lighten($brand-color-2, 10%);
+
+
+//Font colors
+$body-text:											#666;
+$header-text:										#000;
+$link-text:											#428bca;
+$link-text-hover:								darken($link-text, 10%);
+$link-text-active:							#900;
+
+//Menu colors
+$menu-bg:												$brand-color-5;
+$menu-bg-active:								$brand-color-4;
+$menu-bg-hover:									$brand-color-3; //darken($menu-bg, 20%); 
+$menu-text:											$white;  //default is white
+$menu-text-active:							$white;
+$menu-text-hover:								$white; 
+$vertmenu-text:									$link-text;  //default is $link-text
+$vertmenu-text-active:					$link-text-active;  //default is $link-text-active
+$vertmenu-text-hover:						$link-text-hover;  //default is $link-text-hover
+$vertmenu-bg:										transparent;
+$vertmenu-bg-active:						lighten($brand-color-1, 10%);
+$vertmenu-bg-hover:							lighten($brand-color-1, 20%);
+
+
+// Translucent colors
+$translucent-black: rgba(#000, 0.1);
+$translucent-white: rgba(#000, 0.1);
+$translucent-grey: rgba(#999, 0.3);
+
+
+// Form elements and button colors
+
+$form-border:										none;
+$form-input-bg:                 #eee;
+$form-input-bg-hover:           #ddd;
+$form-input-bg-disabled:				#fdfdfd;
+$form-input-text:								$body-text;
+$form-input-placeholder:				#ccc; //lighten($body-text, 30%);
+
+
+$btn-font-weight:               normal;
+
+$btn-default-bg: 								#aaa;
+$btn-default-bg-hover:          darken($btn-default-bg, 10%);
+$btn-default-bg-active:         darken($btn-default-bg, 20%);
+$btn-default-border:						darken($btn-default-bg, 5%);
+$btn-default-text:							$white;
+
+$btn-primary-bg:                #337ab7;
+$btn-primary-bg-hover:          darken($btn-primary-bg, 10%);
+$btn-primary-bg-active:         darken($btn-primary-bg, 20%);
+$btn-primary-border:						darken($btn-primary-bg, 5%);
+$btn-primary-text:							$white;
+
+$btn-success-bg:                #5cb85c;
+$btn-success-bg-hover:          darken($btn-success-bg, 10%);
+$btn-success-bg-active:         darken($btn-success-bg, 20%);
+$btn-success-border:						darken($btn-success-bg, 5%);
+$btn-success-text:							$white;
+
+$btn-info-bg:										#5bc0de;
+$btn-info-bg-hover:							darken($btn-info-bg, 10%);
+$btn-info-bg-active:						darken($btn-info-bg, 20%);
+$btn-info-border:								darken($btn-info-bg, 5%);
+$btn-info-text:									$white;
+
+$btn-warning-bg:								#f0ad4e;
+$btn-warning-bg-hover:					darken($btn-warning-bg, 10%);
+$btn-warning-bg-active:					darken($btn-warning-bg, 20%);
+$btn-warning-border:						darken($btn-warning-bg, 5%);
+$btn-warning-text:							$white;
+
+$btn-danger-bg:									#d9534f;
+$btn-danger-bg-hover:						darken($btn-danger-bg, 10%);
+$btn-danger-bg-active:					darken($btn-danger-bg, 20%);
+$btn-danger-border:							darken($btn-danger-bg, 5%);
+$btn-danger-text:								$white;
+

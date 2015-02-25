@@ -1,0 +1,52 @@
+// styles for tables go here
+
+$table-border: #eee;
+
+table {
+	border: 1px solid $table-border;
+	margin: .5em 0;
+	width: 100%;
+	th {
+		background: #f3f3e9;
+		border: 1px solid $table-border;
+		color: #000;
+		font-weight: 400;
+		padding: 4px;
+	}
+	tr {
+		&:nth-child(odd){
+			background: #fcfcfa;
+		}
+		&:nth-child(even){
+			background: #fff;
+		}
+	}
+	td {
+		border: 1px solid $table-border;
+		padding: 2px 4px;
+		li {
+			margin: 0 0 .5em;
+		}
+	}
+	caption {
+		font-style: normal;
+		text-align: left;		
+	}
+}
+
+table.no-style {
+	border: none;
+	tr {
+		background: transparent;
+		border-color: red;
+	}
+	td, th {
+		border: none;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}

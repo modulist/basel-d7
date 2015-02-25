@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6 {
+	color: $header-text;
+	font-family: $header-font-family;
+	margin: 1em 0 .5em;
+}
+
+h1, h2, h3, h4 {
+	font-weight: $header-font-weight;
+	letter-spacing: 0;
+  line-height: 1.15em;
+}
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;	
+}
+
+h1.h2 {
+	@extend h2;
+}
+h1.h3, h2.h3 {
+	@extend h3;
+}
+h2.h1, h3.h1 {
+	@extend h1;
+}
+h2.h4, h3.h4 {
+	@extend h4;
+}
+h2.h5, h3.h5, h4.h5 {
+	@extend h5;
+}
+h3.h2, h4.h2 {
+	@extend h2;
+}
+h3.h6, h4.h6, h5.h6 {
+	@extend h6;
+}
+
+footer h2 {
+	@extend h4;
+}
