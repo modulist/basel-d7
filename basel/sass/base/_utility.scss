@@ -1,27 +1,27 @@
 .float-left {
-	float: left;
-	margin: 0 15px 10px 0;
+  float: left;
+  margin: 0 15px 10px 0;
 }
 .float-right {
-	float: right;
-	margin: 0 0 10px 15px;
+  float: right;
+  margin: 0 0 10px 15px;
 }
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 .fade.in {
-	opacity:1
+  opacity:1
 }
 .collapse {
-	display:none
+  display:none
 }
 .collapse.in {
-	display:block
+  display:block
 }
 .collapsing {
-	position:relative;
-	height:0;
-	overflow:hidden;
+  position:relative;
+  height:0;
+  overflow:hidden;
 -webkit-transition:height .35s ease;
 transition:height .35s ease
 }
