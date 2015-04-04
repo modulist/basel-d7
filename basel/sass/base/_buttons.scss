@@ -48,7 +48,7 @@ input[type="submit"] {
   border: 1px solid $btn-default-bg;
   color: $btn-default-bg;
   &:hover {
-..  background: $white;
+    background: $white;
     border-color: $link-text-hover;
     color: $link-text-hover;
   }
