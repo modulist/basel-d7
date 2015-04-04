@@ -1,0 +1,77 @@
+// Basel grid classes, based on singularitygs
+
+.row {
+	@include clearfix();
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-12 {
+	float: left;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.alpha, .first, ,no-left-margin {
+	margin-left: 0 !important;
+}
+.omega, .last, .no-right-margin {
+	margin-right: 0 !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+
+/* SASS loop to create column classes. You can adjust the upper number if you need more columns
+*  You can adjust the upper number if you need more columns
+**/
+@for $i from 1 through $max-column-number {
+	.col-#{$i} {
+		@include float-span ($i);
+	}
+}
+
+/* Convert singularitygs semantic grid classes to Bootstrap classes for extra compatibility
+*  You can adjust the max column number in _measurements.scss if you need more columns
+**/
+@for $i from 1 through $max-column-number{
+	.col-xs-#{$i} {
+		@include float-span ($i);
+		float: left;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+@for $i from 1 through $max-column-number {
+	@media(min-width: 768px) {
+		.col-sm-#{$i} {
+			@include float-span ($i);
+			float: left;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@for $i from 1 through $max-column-number {
+	@media(min-width: 992px) {
+		.col-md-#{$i} {
+			@include float-span ($i);
+			float: left;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@for $i from 1 through $max-column-number {
+	@media(min-width: 1200px) {
+		.col-lg-#{$i} {
+			@include float-span ($i);
+			float: left;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+

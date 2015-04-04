@@ -1,0 +1,29 @@
+// place any site-wide measurements here
+
+$font-size-base:								14px;
+$font-size-small:								11px;
+
+$max-column-number:							12;
+
+$form-input-font-size:					($font-size-base * .9); 
+$form-label-font-size:					($font-size-base * 1); 
+$form-input-border:							none;
+$form-line-height:							1.15em;
+$form-input-padding:						4px 10px;
+$form-input-radius:							4px;
+
+$menu-padding-vert:							0.5em;
+$menu-padding-horiz:						1em;
+$vertmenu-indent:								1.25em;
+$vertmenu-padding-vert:					0.33em;
+$vertmenu-submenu-width:				12em;
+
+$line-height-p:									1.5em;
+$line-height-headers:						1.15em;
+
+$list-padding:									0.5em 0;
+
+$screen-sm-min:									30em;
+
+$block-margin:									30px;
+$page-outside-margin:						0 5%;
