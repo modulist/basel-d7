@@ -1,0 +1,3 @@
+# ignore local settings files
+*Gemfile.lock
+*~unused*
