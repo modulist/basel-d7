@@ -1,0 +1,52 @@
+// use this file for home-page-specific styles
+
+body.front {
+	h1 {
+		display: none;
+	}
+	main,
+	#main,
+	#main-wrapper {
+		margin: 0;
+		width: 100%;
+	}
+	#content {
+		background-color: #fff;
+		padding: 30px 10%;
+		width: 100%;
+	}	
+}
+
+// intro text
+body.front #block-system-main {
+	@extend .col-sm-6;	
+	@extend .alpha;	
+}
+
+// interests panel
+.block-interests {
+	.interests-item {
+		float: left;
+		margin: 0;
+		width: 33.333%;		
+	}
+	h2.interests-title {
+		color: #fff;
+		display: block;
+		font-family: 'Finlek W00', sans-serif;
+		font-size: 3.5vw;
+		font-weight: 400;
+		line-height: 1em;
+		margin-top: -15vw;
+		margin-bottom: 0;
+		padding: 1em;
+		position: absolute;
+		text-align: center;
+		text-shadow: .25em .25em .25em rgba(0,0,0,.5);
+		width: 33.33%;
+		z-index: 2;
+	}
+	.interests-bg {
+		width: 100%;
+	}
+}
