@@ -1,3 +1,6 @@
 # ignore local settings files
 *Gemfile.lock
 *~unused/*
+
+# ignore cache files
+*.sass-cache/
