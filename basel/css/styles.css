@@ -2017,15 +2017,14 @@ code {
   color: #333;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: inherit;
-  padding: 15px 20px;
 }
 
-/* line 75, ../sass/base/_typography-core.scss */
+/* line 73, ../sass/base/_typography-core.scss */
 sub, sup {
   font-size: .625em;
 }
 
-/* line 79, ../sass/base/_typography-core.scss */
+/* line 77, ../sass/base/_typography-core.scss */
 .item-list .title {
   font-weight: 300;
 }
