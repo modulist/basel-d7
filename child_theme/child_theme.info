@@ -6,17 +6,18 @@ core = 7.x
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[topbar]							= 'Top Bar'
-regions[menubar]						= 'Menu Bar'
-regions[masthead]						= 'Masthead'
+regions[branding_first]			= 'Branding first'
+regions[branding_second]		= 'Branding second'
 regions[header]							= 'Header'
-regions[content_top]				= 'Content top'
 regions[content]						= 'Content'
-regions[content_bottom]			= 'Content bottom'
 regions[sidebar_first]			= 'Sidebar first'
 regions[sidebar_second]			= 'Sidebar second'
-regions[footer_top]					= 'Footer top'
-regions[footer_bottom]			= 'Footer bottom'
+regions[footer_first]				= 'Footer first'
+regions[footer_second]			= 'Footer second'
+regions[footer_third]				= 'Footer third'
+regions[footer_fourth]			= 'Footer fourth'
+regions[footer]							= 'Footer bottom'
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -24,12 +25,11 @@ regions[footer_bottom]			= 'Footer bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[print][] = css/print.css
-;stylesheets[all][] = css/hacks.css
 stylesheets[all][] = css/styles.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
-; scripts[] = 'js/colorbox-responsive.js'
+; scripts[] = 'js/exmample.js'
 
