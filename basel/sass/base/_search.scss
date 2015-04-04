@@ -1,38 +1,38 @@
 // modify Drupal's default search form
 @media (min-width: 40em){
 .block-search {
-	input[type="text"] {
-		margin-right: 2%;
-		width: 65%;
-	}
-	input[type="submit"] {
-		width: 30%;
-	}
+  input[type="text"] {
+    margin-right: 2%;
+    width: 65%;
+  }
+  input[type="submit"] {
+    width: 30%;
+  }
 }
 }
 
 // override Drupal's search result styles
 ol.search-results {
-	list-style: decimal;
-	padding-top: 0;
-	li {
-		padding: 0 0 1em;
-		line-height: $line-height-p;
-	}
-	p {
-		// margin: 0 0 .5em;
-		strong {
-			background: $form-input-bg;
-			border-radius: $form-input-radius*.5;
-			display: inline-block;
-			//font-weight: bold;
-			padding: 0 .25em;
-		}
-	}
+  list-style: decimal;
+  padding-top: 0;
+  li {
+    padding: 0 0 1em;
+    line-height: $line-height-p;
+  }
+  p {
+    // margin: 0 0 .5em;
+    strong {
+      background: $form-input-bg;
+      border-radius: $form-input-radius*.5;
+      display: inline-block;
+      //font-weight: bold;
+      padding: 0 .25em;
+    }
+  }
 }
 h3.search-result {
-	margin: 0;
+  margin: 0;
 }
 .form-composite > legend {
-	font-weight: normal;
+  font-weight: normal;
 }

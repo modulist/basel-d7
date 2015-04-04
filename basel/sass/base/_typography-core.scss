@@ -1,81 +1,81 @@
 html, body {
-	font-family: $font-family-base;
-	font-size: $font-size-base;
-	color: $body-text;  
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $body-text;  
 }
 
 
 p {
   margin: .5em 0;
   strong {
-	  color: #000;
-	  font-weight: 500;
+    color: #000;
+    font-weight: 500;
   }
 }
 
 a {
   color: $link-text;
   text-decoration: none;
-  &:hover	{ 
-	  color: $link-text-hover;
+  &:hover  { 
+    color: $link-text-hover;
   }
-  &:active	{ 
-	  color: $link-text-active;
+  &:active  { 
+    color: $link-text-active;
   }
 }
 
 
 ul {
-	margin: 0;
-	padding: 0 0 0 1.3em;
+  margin: 0;
+  padding: 0 0 0 1.3em;
 }
 li {
-	padding: .5em 0;
+  padding: .5em 0;
 }
 ul.plain {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	ul {
-		list-style: inherit;
-		padding: $list-padding;
-	}
-	li {
-		padding: $list-padding;
-		li { 
-			padding-left: $vertmenu-indent;
-			&:last-child {
-				padding-bottom: 0;
-			}
-		}
-	}
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  ul {
+    list-style: inherit;
+    padding: $list-padding;
+  }
+  li {
+    padding: $list-padding;
+    li { 
+      padding-left: $vertmenu-indent;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
 footer ul {
-	@extend ul.plain;
+  @extend ul.plain;
 }
 
 
 ol {
-	margin: 0;
-	padding: 1.32em;
+  margin: 0;
+  padding: 1.32em;
 }
 
 code {
-	background-color: #f7f7f9;
-	border: 1px solid #e1e1e8;
-	border-radius: 4px;
-	color: #333;
-	display: block;
-	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-	font-size: inherit;
-	padding: 15px 20px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  color: #333;
+  display: block;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: inherit;
+  padding: 15px 20px;
 }
 
 sub, sup {
-	font-size: .625em;
+  font-size: .625em;
 }
 
 .item-list .title {
-	font-weight: $header-font-weight;
+  font-weight: $header-font-weight;
 }

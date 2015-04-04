@@ -48,12 +48,12 @@ input[type="submit"] {
   border: 1px solid $btn-default-bg;
   color: $btn-default-bg;
   &:hover {
-	  background: $white;
+..  background: $white;
     border-color: $link-text-hover;
     color: $link-text-hover;
   }
   &:active {
-	  background: $white;
+    background: $white;
     border-color: $link-text-active;
     color: $link-text-active;
   }
@@ -121,27 +121,27 @@ input[type="submit"] {
 
 
 .btn-link {
-	// font-weight:normal;
-	color: $link-text;
-	cursor:pointer;
-	border-radius:0
+  // font-weight:normal;
+  color: $link-text;
+  cursor:pointer;
+  border-radius:0
 }
 .btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
-	background-color:transparent;
-	-webkit-box-shadow:none;
-	box-shadow:none
+  background-color:transparent;
+  -webkit-box-shadow:none;
+  box-shadow:none
 }
 .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
-	border-color:transparent
+  border-color:transparent
 }
 .btn-link:hover, .btn-link:focus {
-	color:#2a6496;
-	text-decoration:underline;
-	background-color:transparent
+  color:#2a6496;
+  text-decoration:underline;
+  background-color:transparent
 }
 .btn-link[disabled]:hover, fieldset[disabled] .btn-link:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:focus {
-	color:#999;
-	text-decoration:none
+  color:#999;
+  text-decoration:none
 }
 
 //##########################################

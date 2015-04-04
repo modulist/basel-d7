@@ -158,8 +158,8 @@ input[type="search"] {
 }
 
 .form-group {
-	display: block;  // [CHECK]
-	margin-bottom: $font-size-base;
+  display: block;  // [CHECK]
+  margin-bottom: $font-size-base;
 }
 
 // Checkboxes and radios
@@ -244,14 +244,14 @@ input[type="checkbox"] {
 */
 
 label {
-	display: block; //[CHECK] inline-block in Bootstrap
-	margin-bottom: .25em;
-	max-width: 30em;
-	//width: 100%;
+  display: block; //[CHECK] inline-block in Bootstrap
+  margin-bottom: .25em;
+  max-width: 30em;
+  //width: 100%;
 }
 
 textarea.form-control {
-	height:auto
+  height:auto
 }
 
 
@@ -268,77 +268,77 @@ input:focus {
 }
 
 detail {
-	border: 1px solid $translucent-grey;
-	&:focus {
-		border: 1px solid $translucent-grey;
-	}
+  border: 1px solid $translucent-grey;
+  &:focus {
+    border: 1px solid $translucent-grey;
+  }
 }
 .form-inline {
-	@media(min-width: 768px) {
-	    // Inline-block all the things for "inline"
-	  .form-group {
-	    display: inline-block;
-	    margin-bottom: $font-size-base;
-	    vertical-align: middle;
-	  }
-	
-	  .form-control {
-	    display: inline-block;
-	    width: auto; // Prevent labels from stacking above inputs in `.form-group`
-	    vertical-align: middle;
-	  }
-	
-	  // Make static controls behave like regular ones
-	  .form-control-static {
-	    display: inline-block;
-	  }
-	
-	  .input-group {
-	    display: inline-table;
-	    vertical-align: middle;
-	
-	    .input-group-addon,
-	    .input-group-btn,
-	    .form-control {
-	      width: auto;
-	    }
-	  }
-	  // Input groups need that 100% width though
-	  .input-group > .form-control {
-	    width: 100%;
-	  }
-	
-	  .control-label {
-	    margin-bottom: 0;
-	    vertical-align: middle;
-	  }
-	
-	  // Remove default margin on radios/checkboxes that were used for stacking, and
-	  // then undo the floating of radios and checkboxes to match (which also avoids
-	  // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
-	  .radio,
-	  .checkbox,
-	  button {
-	    display: inline-block;
-	    margin-top: 0;
-	    margin-bottom: $font-size-base;
-	    vertical-align: middle;
-	
-	    label {
-	      padding-left: 0;
-	    }
-	  }
-	  .radio input[type="radio"],
-	  .checkbox input[type="checkbox"] {
-	    position: relative;
-	    margin-left: 0;
-	  }
-	
-	  // Re-override the feedback icon.
-	  .has-feedback .form-control-feedback {
-	    top: 0;
-	  }
-	}
+  @media(min-width: 768px) {
+      // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: $font-size-base;
+      vertical-align: middle;
+    }
+  
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+  
+    // Make static controls behave like regular ones
+    .form-control-static {
+      display: inline-block;
+    }
+  
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+  
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+    // Input groups need that 100% width though
+    .input-group > .form-control {
+      width: 100%;
+    }
+  
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+  
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match (which also avoids
+    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
+    .radio,
+    .checkbox,
+    button {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: $font-size-base;
+      vertical-align: middle;
+  
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+  
+    // Re-override the feedback icon.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+  }
 }
 
 // Help text
@@ -425,48 +425,48 @@ detail {
 */
 
 /*.input-group {
-	border-collapse: separate;
-	display: table;
-	position: relative;
-	&.col {
-		float:none;
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.form-control {
-		margin-bottom: 0;
-		width:100%;
-	}
+  border-collapse: separate;
+  display: table;
+  position: relative;
+  &.col {
+    float:none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .form-control {
+    margin-bottom: 0;
+    width:100%;
+  }
 }
 .input-group-lg {
-	> .form-control, 
-	> .input-group-addon,
-	> .input-group-btn > .btn {
-		height:45px;
-		padding:10px 16px;
-		font-size:18px;
-		line-height:1.33;
-		border-radius:6px;
-	}
+  > .form-control, 
+  > .input-group-addon,
+  > .input-group-btn > .btn {
+    height:45px;
+    padding:10px 16px;
+    font-size:18px;
+    line-height:1.33;
+    border-radius:6px;
+  }
 }
 .input-group-addon {
-	background-color: #eee;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	color: #555;
-	line-height: 1;
-	padding: 6px 12px;
-	text-align: center;
-	&:first-child {
-		border-right: 0;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	&:left-child {
-		border-left: 0;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  line-height: 1;
+  padding: 6px 12px;
+  text-align: center;
+  &:first-child {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &:left-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 */
 
