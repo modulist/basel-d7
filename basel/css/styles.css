@@ -1713,90 +1713,97 @@ ul.menu .expanded, ul.menu .collapsed {
   list-style-image: none;
 }
 
-/* line 48, ../sass/base/_menus.scss */
-header ul.menu {
-  background-color: #f0ad4e;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 53, ../sass/base/_menus.scss */
-header ul.menu li {
-  background-color: #f0ad4e;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 59, ../sass/base/_menus.scss */
-header ul.menu li.expanded {
-  background: url("/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png") no-repeat -64px -16px;
-}
-/* line 63, ../sass/base/_menus.scss */
-header ul.menu a {
-  color: white;
-  display: block;
-  margin: 0;
-  padding: 0.5em 1em;
-  /*span.ui-icon-carat-1-e {
-    float: right;
-    position: static;
-    margin-top: 2px;
-    width: 16px;
-    height: 16px;
-    background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;        
-  }*/
-}
-/* line 68, ../sass/base/_menus.scss */
-header ul.menu a:hover {
-  background-color: #00618b;
-  color: white;
-  -webkit-transition: All 0.5s ease;
-          transition: All 0.5s ease;
-}
-/* line 73, ../sass/base/_menus.scss */
-header ul.menu a.active {
-  background-color: #d9534f;
-  color: white;
-}
-/* line 76, ../sass/base/_menus.scss */
-header ul.menu a.active:after {
-  content: none;
-}
-/* line 89, ../sass/base/_menus.scss */
-header ul.menu > li {
-  float: left;
-}
-/* line 92, ../sass/base/_menus.scss */
-header ul.menu ul {
-  border: 0;
-  display: block;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  z-index: 1000;
-}
-/* line 101, ../sass/base/_menus.scss */
-header ul.menu ul li {
-  float: none;
-  margin: 0;
-  /*ul {
+@media (min-width: 60em) {
+  /* line 49, ../sass/base/_menus.scss */
+  header ul.menu {
+    background-color: #f0ad4e;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 54, ../sass/base/_menus.scss */
+  header ul.menu li {
+    background-color: #f0ad4e;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  /* line 60, ../sass/base/_menus.scss */
+  header ul.menu li.expanded {
+    background: url("/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png") no-repeat -64px -16px;
+  }
+  /* line 64, ../sass/base/_menus.scss */
+  header ul.menu a {
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 0.5em 2em 0.5em 1em;
+    /*span.ui-icon-carat-1-e {
+      float: right;
+      position: static;
+      margin-top: 2px;
+      width: 16px;
+      height: 16px;
+      background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;
+    }*/
+  }
+  /* line 69, ../sass/base/_menus.scss */
+  header ul.menu a:hover {
+    background-color: #00618b;
+    color: white;
+    -webkit-transition: All 0.5s ease;
+            transition: All 0.5s ease;
+  }
+  /* line 74, ../sass/base/_menus.scss */
+  header ul.menu a.active {
+    background-color: #d9534f;
+    color: white;
+  }
+  /* line 77, ../sass/base/_menus.scss */
+  header ul.menu a.active:after {
+    content: none;
+  }
+  /* line 90, ../sass/base/_menus.scss */
+  header ul.menu > li {
+    float: left;
+  }
+  /* line 93, ../sass/base/_menus.scss */
+  header ul.menu ul {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
     position: absolute;
-      left: $vertmenu-submenu-width;
-      top: 0;
-  }*/
+    top: 2.15em;
+    z-index: 1000;
+  }
+  /* line 102, ../sass/base/_menus.scss */
+  header ul.menu ul li {
+    float: none;
+    margin: 0;
+    /*ul {
+      position: absolute;
+        left: $vertmenu-submenu-width;
+        top: 0;
+    }*/
+  }
+  /* line 3, ../sass/base/__mixins.scss */
+  header ul.menu:after:before, header ul.menu:after:after {
+    content: " ";
+    display: table;
+  }
+  /* line 8, ../sass/base/__mixins.scss */
+  header ul.menu:after:after {
+    clear: both;
+  }
 }
-/* line 3, ../sass/base/__mixins.scss */
-header ul.menu:after:before, header ul.menu:after:after {
-  content: " ";
-  display: table;
-}
-/* line 8, ../sass/base/__mixins.scss */
-header ul.menu:after:after {
-  clear: both;
+/* line 121, ../sass/base/_menus.scss */
+.sf-menu li.sfHover ul {
+  top: 2.15em;
 }
 
-/* line 119, ../sass/base/_menus.scss */
+/* line 126, ../sass/base/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #ddd;
   /*&.nav-justified {
@@ -1813,13 +1820,13 @@ ul.primary:before, ul.primary:after {
 ul.primary:after {
   clear: both;
 }
-/* line 122, ../sass/base/_menus.scss */
+/* line 129, ../sass/base/_menus.scss */
 ul.primary > li {
   float: left;
   margin-bottom: -1px;
   padding: 0;
 }
-/* line 129, ../sass/base/_menus.scss */
+/* line 136, ../sass/base/_menus.scss */
 ul.primary > li > a {
   background: #ddd;
   color: #428bca;
@@ -1827,11 +1834,11 @@ ul.primary > li > a {
   line-height: 1.5em;
   border-radius: 4px 4px 0 0;
 }
-/* line 136, ../sass/base/_menus.scss */
+/* line 143, ../sass/base/_menus.scss */
 ul.primary > li > a:hover {
   color: #3071a9;
 }
-/* line 144, ../sass/base/_menus.scss */
+/* line 151, ../sass/base/_menus.scss */
 ul.primary > li.active > a, ul.primary > li.active > a:hover, ul.primary > li.active > a:focus {
   color: white;
   background-color: #00618b;
