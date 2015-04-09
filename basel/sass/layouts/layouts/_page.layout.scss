@@ -50,6 +50,9 @@ body {
     @include grid-span(3,4);
   }
 }
+header {
+  padding: 2em $page-outside-margin-horiz 0;		
+}
 main {
   padding-bottom: 4em;
 }
@@ -57,11 +60,18 @@ main {
   //background: $brand-color-1-light;
   padding: 2em 0 8em;
 }
-header,
-#messages,
-#main-wrapper,
+#main-wrapper {
+  padding: 0 $page-outside-margin-horiz 4em;		
+}
 #footer-wrapper {
-  margin: $page-outside-margin;    
+	background: $brand-color-1-light;
+	padding: 2em 0 8em;
+}
+#messages 	{
+  margin: $page-outside-margin-vert $page-outside-margin-horiz;			
+}
+footer {
+  padding: 30px $page-outside-margin-horiz $page-outside-margin-vert;		
 }
 
 .block {
