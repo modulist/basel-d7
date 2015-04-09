@@ -75,16 +75,17 @@ body {
 	}
 }
 #main-wrapper {
-	padding-bottom: 4em;
+  padding: 0 $page-outside-margin-horiz 4em;		
 }
 #footer-wrapper {
 	background: $brand-color-1-light;
 	padding: 2em 0 8em;
 }
-#messages,
-#main-wrapper,
+#messages 	{
+  margin: $page-outside-margin-vert $page-outside-margin-horiz;			
+}
 footer {
-  margin: $page-outside-margin;		
+  padding: 30px $page-outside-margin-horiz $page-outside-margin-vert;		
 }
 
 main .block {
@@ -107,4 +108,26 @@ main,
 	margin-top: -15vw;
 	position: relative;
 	z-index: 2;
+}
+
+@include layout (16) {
+	.full-width,
+	body.front #content .panel-wide {
+		@include grid-span(16,1);	
+		@include clearfix;
+		clear: both;
+		float: none;			
+	}
+	.normal-width {
+		@include grid-span(12,3);
+		clear: both;
+		float: none;			
+	}
+	.smaller-width,
+	body.front #content .panel-thin {
+		@include grid-span(8,5);
+		clear: both;
+		float: none;
+		border: 4px solid red;
+	}
 }
