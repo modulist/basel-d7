@@ -2250,15 +2250,6 @@ main .block-block:nth-child(3n+2) {
   color: #5f5f5f;
 }
 
-/* line 28, ../sass/components/_layout-elements.scss */
-#footer-columns {
-  width: 151.28205%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-}
-
 /* line 34, ../sass/components/_layout-elements.scss */
 footer h2, footer h1.h2, footer h3.h2, footer h4.h2, footer h2.h2 {
   margin-top: -30px;
@@ -2317,8 +2308,8 @@ body {
   }
 
   /* line 31, ../sass/layouts/layouts/_page.layout.scss */
-  .not-front.no-sidebars main,
-  .front main {
+  .front main,
+  .not-front.no-sidebars main {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 100%;
     float: right;
@@ -2328,29 +2319,17 @@ body {
   }
 
   /* line 35, ../sass/layouts/layouts/_page.layout.scss */
-  #content-top {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
+  .not-front:not(.no-sidebars) #content,
+  .not-front:not(.no-sidebars) #content-bottom {
+    -sgs-span-settings: ("span": 9, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 74.13793%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    float: none;
   }
 
   /* line 39, ../sass/layouts/layouts/_page.layout.scss */
-  .not-front:not(.no-sidebars) #content,
-  .not-front:not(.no-sidebars) #content-bottom {
-    -sgs-span-settings: ("span": 9, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 74.13793%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-    float: none;
-  }
-
-  /* line 44, ../sass/layouts/layouts/_page.layout.scss */
   .not-front.no-sidebars #content,
   .not-front.no-sidebars #content-bottom,
   .front #content,
@@ -2363,7 +2342,7 @@ body {
     clear: none;
   }
 
-  /* line 50, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 45, ../sass/layouts/layouts/_page.layout.scss */
   .region-sidebar-first {
     -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2373,7 +2352,7 @@ body {
     clear: none;
   }
 
-  /* line 53, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 48, ../sass/layouts/layouts/_page.layout.scss */
   .region-sidebar-second {
     -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2383,7 +2362,7 @@ body {
     clear: none;
   }
 
-  /* line 56, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 51, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-first {
     -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2393,7 +2372,7 @@ body {
     clear: none;
   }
 
-  /* line 59, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 54, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-second {
     -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2403,7 +2382,7 @@ body {
     clear: none;
   }
 
-  /* line 62, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 57, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-third {
     -sgs-span-settings: ("span": 3, "location": 7, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2413,7 +2392,7 @@ body {
     clear: none;
   }
 
-  /* line 65, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 60, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-fourth {
     -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2423,7 +2402,7 @@ body {
     clear: none;
   }
 
-  /* line 68, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 63, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-bottom {
     -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2433,56 +2412,56 @@ body {
     clear: none;
   }
 }
-/* line 73, ../sass/layouts/layouts/_page.layout.scss */
+/* line 68, ../sass/layouts/layouts/_page.layout.scss */
 header {
   padding: 0 5% 0;
 }
 
-/* line 76, ../sass/layouts/layouts/_page.layout.scss */
+/* line 71, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper {
   padding-bottom: 4em;
 }
 
-/* line 79, ../sass/layouts/layouts/_page.layout.scss */
+/* line 74, ../sass/layouts/layouts/_page.layout.scss */
 .no-sidebars #main-wrapper {
   margin: 0;
 }
 
-/* line 82, ../sass/layouts/layouts/_page.layout.scss */
+/* line 77, ../sass/layouts/layouts/_page.layout.scss */
 #footer-wrapper {
   background: #063269;
   padding: 2em 0 8em;
 }
 
-/* line 86, ../sass/layouts/layouts/_page.layout.scss */
+/* line 81, ../sass/layouts/layouts/_page.layout.scss */
 #messages,
 #main-wrapper,
 footer {
   margin: 0 5%;
 }
 
-/* line 91, ../sass/layouts/layouts/_page.layout.scss */
+/* line 86, ../sass/layouts/layouts/_page.layout.scss */
 main .block {
   margin-bottom: 30px;
 }
 
-/* line 94, ../sass/layouts/layouts/_page.layout.scss */
+/* line 89, ../sass/layouts/layouts/_page.layout.scss */
 .no-sidebars main .block {
   padding: 30px 5%;
   margin-bottom: 0;
 }
 
-/* line 99, ../sass/layouts/layouts/_page.layout.scss */
-#breadcrumb,
-#page-title,
-.tabs,
-.messages {
+/* line 95, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars #breadcrumb,
+.no-sidebars #page-title,
+.no-sidebars .tabs,
+.no-sidebars .messages {
   margin-left: 5%;
   margin-right: 5%;
 }
 
 /* normalize header margins in all three columns */
-/* line 108, ../sass/layouts/layouts/_page.layout.scss */
+/* line 105, ../sass/layouts/layouts/_page.layout.scss */
 .region-sidebar-first h2:first-child, .region-sidebar-first h1.h2:first-child, .region-sidebar-first h3.h2:first-child, .region-sidebar-first h4.h2:first-child,
 .region-sidebar-second h2:first-child,
 .region-sidebar-second h1.h2:first-child,
@@ -2495,21 +2474,21 @@ h3#page-title.h1 {
   margin-top: 0;
 }
 
-/* line 114, ../sass/layouts/layouts/_page.layout.scss */
+/* line 111, ../sass/layouts/layouts/_page.layout.scss */
 main,
 .region-sidebar-first,
 .region-sidebar-second {
   padding: 0 0 7em;
 }
 
-/* line 119, ../sass/layouts/layouts/_page.layout.scss */
+/* line 116, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper.masthead {
   margin-top: -15vw;
   position: relative;
   z-index: 2;
 }
 
-/* line 126, ../sass/layouts/layouts/_page.layout.scss */
+/* line 123, ../sass/layouts/layouts/_page.layout.scss */
 .full-width,
 body.front #content .panel-wide {
   -sgs-span-settings: ("span": 16, "location": 1, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
@@ -2534,7 +2513,7 @@ body.front #content .panel-wide:after {
   clear: both;
 }
 
-/* line 133, ../sass/layouts/layouts/_page.layout.scss */
+/* line 130, ../sass/layouts/layouts/_page.layout.scss */
 .normal-width {
   -sgs-span-settings: ("span": 12, "location": 3, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
   width: 74.35897%;
@@ -2546,7 +2525,7 @@ body.front #content .panel-wide:after {
   float: none;
 }
 
-/* line 138, ../sass/layouts/layouts/_page.layout.scss */
+/* line 135, ../sass/layouts/layouts/_page.layout.scss */
 .smaller-width,
 body.front #content .panel-thin {
   -sgs-span-settings: ("span": 8, "location": 5, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));

@@ -25,9 +25,9 @@ main .block-block {
 		color: $body-text;
 	}
 }
-#footer-columns {
-	@include grid-span(12, 1, 8); // columns in parent grid, starting at, columns in child grid
-}
+//#footer-columns {
+//	@include grid-span(12, 1, 8); // columns in parent grid, starting at, columns in child grid
+//}
 .footer-column {
 	@extend .col-1;
 }

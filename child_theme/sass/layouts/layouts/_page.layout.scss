@@ -28,18 +28,13 @@ body {
   main {
     @include grid-span(6,4);
   }
-	.not-front.no-sidebars main,
-	.front main {
+	.front main, 
+	.not-front.no-sidebars main {
 		@include grid-span(12,1);
-	}
-	#content-top {
-		@include grid-span(12,1);
-		float: none;	
 	}
 	.not-front:not(.no-sidebars) #content,
 	.not-front:not(.no-sidebars) #content-bottom {
-		@include grid-span(9,1);
-		float: none;
+		@include grid-span(9,4);
 	}
 	.not-front.no-sidebars #content,
 	.not-front.no-sidebars #content-bottom,
@@ -96,12 +91,14 @@ main .block {
 	margin-bottom: 0;
 }
 
-#breadcrumb,
-#page-title,
-.tabs,
-.messages {
-	margin-left: $page-outside-margin-horiz;
-	margin-right: $page-outside-margin-horiz;
+.no-sidebars {
+	#breadcrumb,
+	#page-title,
+	.tabs,
+	.messages {
+		margin-left: $page-outside-margin-horiz;
+		margin-right: $page-outside-margin-horiz;
+	}
 }
 
 /* normalize header margins in all three columns */
