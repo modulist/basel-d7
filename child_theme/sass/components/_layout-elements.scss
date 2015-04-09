@@ -2,41 +2,21 @@ body {
 	background-color: $body-bg;
 }
 
-#topbar {
-	background-color: $navy;
-	color: #fff;
-	padding: 0 11px;
-	text-align: right;
-	.block {
-		margin-bottom: 0;
-	}
-}
-
-h2.masthead-title {
-	position: absolute;
-		left: 0;
-		right: 0;
-	margin: -35vw auto 0;
-	text-align: center;
-}
-.masthead-image {
+main .block-block {
+	display: block;
+	margin: 0 !important;
+	padding: 30px;
 	width: 100%;
-}
-
-#main-menu-wrapper {
-	background-color: #fff;
-}
-
-.not-front #content-top,
-.node-type-product #content {
-	background: #fff;
-	margin-bottom: 3.45%;
-	padding: 3.45%;
-}
-
-#content-top .block {
-		margin-bottom: 0;
+	&:nth-child(3n) {
+		background: #fff;
 	}
+	&:nth-child(3n+1) {
+		background: #666;
+	}
+	&:nth-child(3n+2) {
+		background: #242424;
+	}
+}
 
 #footer-wrapper {
 	background-color: $footer-bg !important;
