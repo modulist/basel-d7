@@ -31,5 +31,5 @@ stylesheets[all][] = css/styles.css
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
-; scripts[] = 'js/exmample.js'
+; scripts[] = 'js/example.js'
 
