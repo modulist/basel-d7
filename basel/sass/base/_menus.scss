@@ -44,7 +44,7 @@ ul.menu { // exclude Drupal toolbar menu
 }
 
 // horizontal navigation
-@media (min-width: 60em) {
+@media (min-width: $menu-breakpoint) {
   header {
     ul.menu {
       background-color: $menu-bg;

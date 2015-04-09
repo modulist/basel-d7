@@ -1713,7 +1713,7 @@ ul.menu .expanded, ul.menu .collapsed {
   list-style-image: none;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 40em) {
   /* line 49, ../sass/base/_menus.scss */
   header ul.menu {
     background-color: #f0ad4e;
