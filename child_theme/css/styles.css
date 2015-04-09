@@ -1712,90 +1712,97 @@ ul.menu .expanded, ul.menu .collapsed {
   list-style-image: none;
 }
 
-/* line 48, ../../basel/sass/base/_menus.scss */
-header ul.menu {
-  background-color: #f31111;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 53, ../../basel/sass/base/_menus.scss */
-header ul.menu li {
-  background-color: #f31111;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 59, ../../basel/sass/base/_menus.scss */
-header ul.menu li.expanded {
-  background: url("/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png") no-repeat -64px -16px;
-}
-/* line 63, ../../basel/sass/base/_menus.scss */
-header ul.menu a {
-  color: white;
-  display: block;
-  margin: 0;
-  padding: 0.5em 1em;
-  /*span.ui-icon-carat-1-e {
-    float: right;
-    position: static;
-    margin-top: 2px;
-    width: 16px;
-    height: 16px;
-    background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;        
-  }*/
-}
-/* line 68, ../../basel/sass/base/_menus.scss */
-header ul.menu a:hover {
-  background-color: #b7d107;
-  color: white;
-  -webkit-transition: All 0.5s ease;
-          transition: All 0.5s ease;
-}
-/* line 73, ../../basel/sass/base/_menus.scss */
-header ul.menu a.active {
-  background-color: #f57f25;
-  color: white;
-}
-/* line 76, ../../basel/sass/base/_menus.scss */
-header ul.menu a.active:after {
-  content: none;
-}
-/* line 89, ../../basel/sass/base/_menus.scss */
-header ul.menu > li {
-  float: left;
-}
-/* line 92, ../../basel/sass/base/_menus.scss */
-header ul.menu ul {
-  border: 0;
-  display: block;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  z-index: 1000;
-}
-/* line 101, ../../basel/sass/base/_menus.scss */
-header ul.menu ul li {
-  float: none;
-  margin: 0;
-  /*ul {
+@media (min-width: 40em) {
+  /* line 49, ../../basel/sass/base/_menus.scss */
+  header ul.menu {
+    background-color: #f31111;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 54, ../../basel/sass/base/_menus.scss */
+  header ul.menu li {
+    background-color: #f31111;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  /* line 60, ../../basel/sass/base/_menus.scss */
+  header ul.menu li.expanded {
+    background: url("/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png") no-repeat -64px -16px;
+  }
+  /* line 64, ../../basel/sass/base/_menus.scss */
+  header ul.menu a {
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 0.5em 2em 0.5em 1em;
+    /*span.ui-icon-carat-1-e {
+      float: right;
+      position: static;
+      margin-top: 2px;
+      width: 16px;
+      height: 16px;
+      background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;
+    }*/
+  }
+  /* line 69, ../../basel/sass/base/_menus.scss */
+  header ul.menu a:hover {
+    background-color: #b7d107;
+    color: white;
+    -webkit-transition: All 0.5s ease;
+            transition: All 0.5s ease;
+  }
+  /* line 74, ../../basel/sass/base/_menus.scss */
+  header ul.menu a.active {
+    background-color: #f57f25;
+    color: white;
+  }
+  /* line 77, ../../basel/sass/base/_menus.scss */
+  header ul.menu a.active:after {
+    content: none;
+  }
+  /* line 90, ../../basel/sass/base/_menus.scss */
+  header ul.menu > li {
+    float: left;
+  }
+  /* line 93, ../../basel/sass/base/_menus.scss */
+  header ul.menu ul {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
     position: absolute;
-      left: $vertmenu-submenu-width;
-      top: 0;
-  }*/
+    top: 2.15em;
+    z-index: 1000;
+  }
+  /* line 102, ../../basel/sass/base/_menus.scss */
+  header ul.menu ul li {
+    float: none;
+    margin: 0;
+    /*ul {
+      position: absolute;
+        left: $vertmenu-submenu-width;
+        top: 0;
+    }*/
+  }
+  /* line 3, ../../basel/sass/base/__mixins.scss */
+  header ul.menu:after:before, header ul.menu:after:after {
+    content: " ";
+    display: table;
+  }
+  /* line 8, ../../basel/sass/base/__mixins.scss */
+  header ul.menu:after:after {
+    clear: both;
+  }
 }
-/* line 3, ../../basel/sass/base/__mixins.scss */
-header ul.menu:after:before, header ul.menu:after:after {
-  content: " ";
-  display: table;
-}
-/* line 8, ../../basel/sass/base/__mixins.scss */
-header ul.menu:after:after {
-  clear: both;
+/* line 121, ../../basel/sass/base/_menus.scss */
+.sf-menu li.sfHover ul {
+  top: 2.15em;
 }
 
-/* line 119, ../../basel/sass/base/_menus.scss */
+/* line 126, ../../basel/sass/base/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #ddd;
   /*&.nav-justified {
@@ -1812,13 +1819,13 @@ ul.primary:before, ul.primary:after {
 ul.primary:after {
   clear: both;
 }
-/* line 122, ../../basel/sass/base/_menus.scss */
+/* line 129, ../../basel/sass/base/_menus.scss */
 ul.primary > li {
   float: left;
   margin-bottom: -1px;
   padding: 0;
 }
-/* line 129, ../../basel/sass/base/_menus.scss */
+/* line 136, ../../basel/sass/base/_menus.scss */
 ul.primary > li > a {
   background: #ddd;
   color: #00918f;
@@ -1826,11 +1833,11 @@ ul.primary > li > a {
   line-height: 1.5em;
   border-radius: 4px 4px 0 0;
 }
-/* line 136, ../../basel/sass/base/_menus.scss */
+/* line 143, ../../basel/sass/base/_menus.scss */
 ul.primary > li > a:hover {
   color: #005e5d;
 }
-/* line 144, ../../basel/sass/base/_menus.scss */
+/* line 151, ../../basel/sass/base/_menus.scss */
 ul.primary > li.active > a, ul.primary > li.active > a:hover, ul.primary > li.active > a:focus {
   color: white;
   background-color: #b7d107;
@@ -2210,7 +2217,7 @@ body.front #content {
 
 /* line 1, ../sass/components/_layout-elements.scss */
 body {
-  background-color: #dfdfdf;
+  background-color: white;
 }
 
 /* line 5, ../sass/components/_layout-elements.scss */
@@ -2257,197 +2264,6 @@ footer h2, footer h1.h2, footer h3.h2, footer h4.h2, footer h2.h2 {
   margin-top: -30px;
 }
 
-/* line 5, ../sass/components/_menus.scss */
-ul.menu {
-  margin: 0;
-  padding: 0;
-}
-/* line 8, ../sass/components/_menus.scss */
-ul.menu ul {
-  margin-left: 1.25em;
-  padding: 0;
-}
-/* line 12, ../sass/components/_menus.scss */
-ul.menu li {
-  line-height: 1.15em;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 17, ../sass/components/_menus.scss */
-ul.menu li.leaf {
-  list-style-image: none;
-}
-/* line 20, ../sass/components/_menus.scss */
-ul.menu li a {
-  color: #00918f;
-  display: block;
-  margin-left: -0.625em;
-  padding: 0.33em 0.625em;
-}
-/* line 25, ../sass/components/_menus.scss */
-ul.menu li a:hover {
-  background: #063269;
-  color: #00c4c1;
-}
-/* line 29, ../sass/components/_menus.scss */
-ul.menu li a:active {
-  background: #08499a;
-  color: #005e5d;
-}
-/* line 33, ../sass/components/_menus.scss */
-ul.menu li a.active:after {
-  content: '\00a0\203a';
-}
-/* line 37, ../sass/components/_menus.scss */
-ul.menu li .active {
-  color: black;
-}
-/* line 41, ../sass/components/_menus.scss */
-ul.menu .expanded, ul.menu .collapsed {
-  list-style-image: none;
-}
-
-/* line 48, ../sass/components/_menus.scss */
-header ul.menu {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 53, ../sass/components/_menus.scss */
-header ul.menu li {
-  background-color: transparent;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 59, ../sass/components/_menus.scss */
-header ul.menu li.expanded {
-  background: url("/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png") no-repeat -64px -16px;
-}
-/* line 63, ../sass/components/_menus.scss */
-header ul.menu a {
-  color: #00918f;
-  display: block;
-  margin: 0;
-  padding: 0.5em 1em;
-}
-/* line 68, ../sass/components/_menus.scss */
-header ul.menu a:hover {
-  background-color: #b7d107;
-  color: white;
-  -webkit-transition: All 0.5s ease;
-          transition: All 0.5s ease;
-}
-/* line 73, ../sass/components/_menus.scss */
-header ul.menu a.active {
-  background-color: #f57f25;
-  color: white;
-}
-/* line 76, ../sass/components/_menus.scss */
-header ul.menu a.active:after {
-  content: none;
-}
-/* line 81, ../sass/components/_menus.scss */
-header ul.menu > li {
-  float: left;
-}
-/* line 84, ../sass/components/_menus.scss */
-header ul.menu ul {
-  border: 0;
-  display: block;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 2.15em;
-  z-index: 1000;
-}
-/* line 93, ../sass/components/_menus.scss */
-header ul.menu ul li {
-  float: none;
-  margin: 0;
-  /*ul {
-  	position: absolute;
-  		left: $vertmenu-submenu-width;
-  		top: 0;
-  }*/
-}
-/* line 3, ../../basel/sass/base/__mixins.scss */
-header ul.menu:after:before, header ul.menu:after:after {
-  content: " ";
-  display: table;
-}
-/* line 8, ../../basel/sass/base/__mixins.scss */
-header ul.menu:after:after {
-  clear: both;
-}
-
-/* line 111, ../sass/components/_menus.scss */
-.superfish {
-  -moz-box-sizing: content-box;
-       box-sizing: content-box;
-}
-
-/* line 114, ../sass/components/_menus.scss */
-.sf-menu ul {
-  overflow: visible !important;
-}
-
-/* line 117, ../sass/components/_menus.scss */
-.sf-menu a.sf-with-ul {
-  padding-right: 1.5em;
-}
-
-/* line 120, ../sass/components/_menus.scss */
-.sf-sub-indicator {
-  right: .25em;
-}
-
-/* line 126, ../sass/components/_menus.scss */
-ul.primary {
-  border-bottom: 1px solid #ddd;
-  /*&.nav-justified {
-    @extend .nav-justified;
-    @extend .nav-tabs-justified;
-  }*/
-}
-/* line 3, ../../basel/sass/base/__mixins.scss */
-ul.primary:before, ul.primary:after {
-  content: " ";
-  display: table;
-}
-/* line 8, ../../basel/sass/base/__mixins.scss */
-ul.primary:after {
-  clear: both;
-}
-/* line 129, ../sass/components/_menus.scss */
-ul.primary > li {
-  float: left;
-  margin-bottom: -1px;
-  padding: 0;
-}
-/* line 136, ../sass/components/_menus.scss */
-ul.primary > li > a {
-  background: #ddd;
-  color: #00918f;
-  margin-right: 2px;
-  line-height: 1.5em;
-  border-radius: 4px 4px 0 0;
-}
-/* line 143, ../sass/components/_menus.scss */
-ul.primary > li > a:hover {
-  color: #005e5d;
-}
-/* line 151, ../sass/components/_menus.scss */
-ul.primary > li.active > a, ul.primary > li.active > a:hover, ul.primary > li.active > a:focus {
-  color: white;
-  background-color: #b7d107;
-  border: none;
-  cursor: default;
-}
-
 /* uncomment to let grids show up */
 /* line 6, ../sass/layouts/layouts/_page.layout.scss */
 body {
@@ -2471,37 +2287,17 @@ body {
 	 $location = which column do I start with? */
 @media (min-width: 40em) {
   /* line 22, ../sass/layouts/layouts/_page.layout.scss */
-  #topbar-wrapper {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
-    float: right;
+  .region-branding-first {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
     margin-left: 0;
-    margin-right: 0;
     clear: none;
   }
 
   /* line 25, ../sass/layouts/layouts/_page.layout.scss */
-  #main-menu-wrapper {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-
-  /* line 28, ../sass/layouts/layouts/_page.layout.scss */
-  #branding {
-    -sgs-span-settings: ("span": 2, "location": 2, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 13.7931%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 8.62069%;
-    clear: none;
-  }
-
-  /* line 31, ../sass/layouts/layouts/_page.layout.scss */
-  #menubar-wrapper {
+  .region-branding-second {
     -sgs-span-settings: ("span": 9, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 74.13793%;
     float: right;
@@ -2510,33 +2306,18 @@ body {
     clear: none;
   }
 
-  /* line 34, ../sass/layouts/layouts/_page.layout.scss */
-  #masthead {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-
-  /*header {
-  	@include grid-span(12,1);
-  }*/
-  /*#main-wrapper {
-  	@include grid-span(12,1);
-  }*/
-  /* line 43, ../sass/layouts/layouts/_page.layout.scss */
-  .not-front main {
-    -sgs-span-settings: ("span": 10, "location": 2, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 82.75862%;
+  /* line 28, ../sass/layouts/layouts/_page.layout.scss */
+  main {
+    -sgs-span-settings: ("span": 6, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.27586%;
     float: left;
     margin-right: -100%;
-    margin-left: 8.62069%;
+    margin-left: 25.86207%;
     clear: none;
   }
 
-  /* line 46, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 31, ../sass/layouts/layouts/_page.layout.scss */
+  .not-front.no-sidebars main,
   .front main {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 100%;
@@ -2546,7 +2327,7 @@ body {
     clear: none;
   }
 
-  /* line 49, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 35, ../sass/layouts/layouts/_page.layout.scss */
   #content-top {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 100%;
@@ -2557,18 +2338,21 @@ body {
     float: none;
   }
 
-  /* line 53, ../sass/layouts/layouts/_page.layout.scss */
-  .not-front #content,
-  .not-front #content-bottom {
+  /* line 39, ../sass/layouts/layouts/_page.layout.scss */
+  .not-front:not(.no-sidebars) #content,
+  .not-front:not(.no-sidebars) #content-bottom {
     -sgs-span-settings: ("span": 9, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 74.13793%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
+    float: none;
   }
 
-  /* line 57, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 44, ../sass/layouts/layouts/_page.layout.scss */
+  .not-front.no-sidebars #content,
+  .not-front.no-sidebars #content-bottom,
   .front #content,
   .front #content-bottom {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
@@ -2579,11 +2363,18 @@ body {
     clear: none;
   }
 
-  /*#sidebar-first {
-  	@include grid-span(3,1);
-  }*/
-  /* line 64, ../sass/layouts/layouts/_page.layout.scss */
-  #sidebar-second {
+  /* line 50, ../sass/layouts/layouts/_page.layout.scss */
+  .region-sidebar-first {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 53, ../sass/layouts/layouts/_page.layout.scss */
+  .region-sidebar-second {
     -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
     float: right;
@@ -2592,61 +2383,106 @@ body {
     clear: none;
   }
 
-  /* line 67, ../sass/layouts/layouts/_page.layout.scss */
-  #footer-wrapper {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
+  /* line 56, ../sass/layouts/layouts/_page.layout.scss */
+  .region-footer-first {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 59, ../sass/layouts/layouts/_page.layout.scss */
+  .region-footer-second {
+    -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.86207%;
+    clear: none;
+  }
+
+  /* line 62, ../sass/layouts/layouts/_page.layout.scss */
+  .region-footer-third {
+    -sgs-span-settings: ("span": 3, "location": 7, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.72414%;
+    clear: none;
+  }
+
+  /* line 65, ../sass/layouts/layouts/_page.layout.scss */
+  .region-footer-fourth {
+    -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
 
-  /* line 70, ../sass/layouts/layouts/_page.layout.scss */
-  #footer-top {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-
-  /* line 73, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 68, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-bottom {
-    -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
+    -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 22.41379%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.86207%;
     clear: none;
   }
 }
-/* line 77, ../sass/layouts/layouts/_page.layout.scss */
+/* line 73, ../sass/layouts/layouts/_page.layout.scss */
+header {
+  padding: 0 5% 0;
+}
+
+/* line 76, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper {
   padding-bottom: 4em;
 }
 
-/* line 80, ../sass/layouts/layouts/_page.layout.scss */
+/* line 79, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars #main-wrapper {
+  margin: 0;
+}
+
+/* line 82, ../sass/layouts/layouts/_page.layout.scss */
 #footer-wrapper {
   background: #063269;
   padding: 2em 0 8em;
 }
 
-/* line 84, ../sass/layouts/layouts/_page.layout.scss */
+/* line 86, ../sass/layouts/layouts/_page.layout.scss */
 #messages,
 #main-wrapper,
 footer {
   margin: 0 5%;
 }
 
-/* line 90, ../sass/layouts/layouts/_page.layout.scss */
+/* line 91, ../sass/layouts/layouts/_page.layout.scss */
 main .block {
   margin-bottom: 30px;
 }
 
+/* line 94, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars main .block {
+  padding: 30px 5%;
+  margin-bottom: 0;
+}
+
+/* line 99, ../sass/layouts/layouts/_page.layout.scss */
+#breadcrumb,
+#page-title,
+.tabs,
+.messages {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /* normalize header margins in all three columns */
-/* line 95, ../sass/layouts/layouts/_page.layout.scss */
+/* line 108, ../sass/layouts/layouts/_page.layout.scss */
 .region-sidebar-first h2:first-child, .region-sidebar-first h1.h2:first-child, .region-sidebar-first h3.h2:first-child, .region-sidebar-first h4.h2:first-child,
 .region-sidebar-second h2:first-child,
 .region-sidebar-second h1.h2:first-child,
@@ -2659,21 +2495,21 @@ h3#page-title.h1 {
   margin-top: 0;
 }
 
-/* line 101, ../sass/layouts/layouts/_page.layout.scss */
+/* line 114, ../sass/layouts/layouts/_page.layout.scss */
 main,
 .region-sidebar-first,
 .region-sidebar-second {
   padding: 0 0 7em;
 }
 
-/* line 106, ../sass/layouts/layouts/_page.layout.scss */
+/* line 119, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper.masthead {
   margin-top: -15vw;
   position: relative;
   z-index: 2;
 }
 
-/* line 113, ../sass/layouts/layouts/_page.layout.scss */
+/* line 126, ../sass/layouts/layouts/_page.layout.scss */
 .full-width,
 body.front #content .panel-wide {
   -sgs-span-settings: ("span": 16, "location": 1, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
@@ -2698,7 +2534,7 @@ body.front #content .panel-wide:after {
   clear: both;
 }
 
-/* line 120, ../sass/layouts/layouts/_page.layout.scss */
+/* line 133, ../sass/layouts/layouts/_page.layout.scss */
 .normal-width {
   -sgs-span-settings: ("span": 12, "location": 3, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
   width: 74.35897%;
@@ -2710,7 +2546,7 @@ body.front #content .panel-wide:after {
   float: none;
 }
 
-/* line 125, ../sass/layouts/layouts/_page.layout.scss */
+/* line 138, ../sass/layouts/layouts/_page.layout.scss */
 .smaller-width,
 body.front #content .panel-thin {
   -sgs-span-settings: ("span": 8, "location": 5, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
