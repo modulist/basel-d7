@@ -10,9 +10,9 @@ body {
 }
 #page {
   /* Uncomment background-grid to view grid */
-  #main-wrapper, #footer-top, #footer-bottom {
-	  @include background-grid($color: rgba(102,102,102,.07));
-  }
+  // #main-wrapper, #footer-top, #footer-bottom {
+	//  @include background-grid($color: rgba(102,102,102,.07));
+  // }
 }
 
 /* specify columns using grid-span($span,$location) syntax
@@ -27,9 +27,9 @@ body {
   }
   main {
     @include grid-span(6,4);
-  }
-	.front main, 
-	.not-front.no-sidebars main {
+  } 
+	.not-front.no-sidebars main,
+	.front.no-sidebars main {
 		@include grid-span(12,1);
 	}
 	.not-front:not(.no-sidebars) #content,
@@ -37,9 +37,7 @@ body {
 		@include grid-span(9,4);
 	}
 	.not-front.no-sidebars #content,
-	.not-front.no-sidebars #content-bottom,
-	.front #content,
-	.front #content-bottom {
+	.not-front.no-sidebars #content-bottom {
 		@include grid-span(12,1);
 	}
   .region-sidebar-first {
@@ -68,6 +66,7 @@ body {
 header {
 	padding: $page-outside-margin-vert $page-outside-margin-horiz 0;
 }
+
 #main-wrapper {
 	padding-bottom: 4em;
 }
@@ -89,6 +88,19 @@ main .block {
 .no-sidebars main .block {
 	padding: 30px $page-outside-margin-horiz;
 	margin-bottom: 0;
+	&.full-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.thin {
+		padding: 30px $page-outside-margin-horiz * 1.5;
+	}
+	&.thinner {
+		padding: 30px $page-outside-margin-horiz * 2;
+	}
+	&.thinnest {
+		padding: 30px $page-outside-margin-horiz * 2.5;
+	}
 }
 
 .no-sidebars {
@@ -120,8 +132,7 @@ main,
 }
 
 @include layout (16) {
-	.full-width,
-	body.front #content .panel-wide {
+	.full-width {
 		@include grid-span(16,1);	
 		@include clearfix;
 		clear: both;
@@ -132,8 +143,7 @@ main,
 		clear: both;
 		float: none;			
 	}
-	.smaller-width,
-	body.front #content .panel-thin {
+	.smaller-width {
 		@include grid-span(8,5);
 		clear: both;
 		float: none;

@@ -2,19 +2,17 @@ body {
 	background-color: $body-bg;
 }
 
-main .block-block {
-	display: block;
-	margin: 0 !important;
-	padding: 30px;
-	width: 100%;
-	&:nth-child(3n) {
-		background: #fff;
+#branding-first {
+	@include clearfix;
+	padding: 0 0 $page-outside-margin-vert/2;
+	#logo {
+		float: left;
 	}
-	&:nth-child(3n+1) {
-		background: #666;
-	}
-	&:nth-child(3n+2) {
-		background: #242424;
+	#site-name {
+		font-size: 40px;
+		font-weight: 300;
+		float: left;
+		padding: 68px 0 0 30px;
 	}
 }
 
