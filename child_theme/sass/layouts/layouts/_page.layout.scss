@@ -1,0 +1,152 @@
+/* uncomment to let grids show up */
+ @include sgs-change('debug', true); 
+ @include add-gutter(2/3);
+ //@include sgs-change('output', 'float'); 
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#page {
+  /* Uncomment background-grid to view grid */
+  // #main-wrapper, #footer-top, #footer-bottom {
+	//  @include background-grid($color: rgba(102,102,102,.07));
+  // }
+}
+
+/* specify columns using grid-span($span,$location) syntax
+	 $span = how many columns does this element span?
+	 $location = which column do I start with? */
+@media (min-width: 40em) {
+  .region-branding-first {
+    @include grid-span(3,1);
+  }
+  .region-branding-second {
+    @include grid-span(9,4);
+  }
+  main {
+    @include grid-span(6,4);
+  } 
+	.not-front.no-sidebars main,
+	.front.no-sidebars main {
+		@include grid-span(12,1);
+	}
+	.not-front:not(.no-sidebars) #content,
+	.not-front:not(.no-sidebars) #content-bottom {
+		@include grid-span(9,4);
+	}
+	.not-front.no-sidebars #content,
+	.not-front.no-sidebars #content-bottom {
+		@include grid-span(12,1);
+	}
+  .region-sidebar-first {
+    @include grid-span(3,1);
+  }
+  .region-sidebar-second {
+    @include grid-span(3,10);
+  }
+  .region-footer-first {
+    @include grid-span(3,1);
+  }
+  .region-footer-second {
+    @include grid-span(3,4);
+  }
+  .region-footer-third {
+    @include grid-span(3,7);
+  }
+  .region-footer-fourth {
+    @include grid-span(3,10);
+  }
+  .region-footer-bottom {
+    @include grid-span(3,4);
+  }
+}
+
+header {
+	padding: $page-outside-margin-vert $page-outside-margin-horiz 0;
+}
+
+#main-wrapper {
+	padding-bottom: 4em;
+}
+.no-sidebars #main-wrapper {
+	margin: 0;
+}
+#footer-wrapper {
+	background: $brand-color-1-light;
+	padding: 2em 0 8em;
+}
+#messages,
+#main-wrapper,
+footer {
+  margin: $page-outside-margin-vert $page-outside-margin-horiz;
+}
+main .block {
+	margin-bottom: $block-margin;
+}
+.no-sidebars main .block {
+	padding: 30px $page-outside-margin-horiz;
+	margin-bottom: 0;
+	&.full-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.thin {
+		padding: 30px $page-outside-margin-horiz * 1.5;
+	}
+	&.thinner {
+		padding: 30px $page-outside-margin-horiz * 2;
+	}
+	&.thinnest {
+		padding: 30px $page-outside-margin-horiz * 2.5;
+	}
+}
+
+.no-sidebars {
+	#breadcrumb,
+	#page-title,
+	.tabs,
+	.messages {
+		margin-left: $page-outside-margin-horiz;
+		margin-right: $page-outside-margin-horiz;
+	}
+}
+
+/* normalize header margins in all three columns */
+.region-sidebar-first h2:first-child,
+.region-sidebar-second h2:first-child,
+h1#page-title
+ {
+	margin-top: 0;
+}
+main,
+.region-sidebar-first,
+.region-sidebar-second {
+	padding: 0 0 7em;
+}
+#main-wrapper.masthead {
+	margin-top: -15vw;
+	position: relative;
+	z-index: 2;
+}
+
+@include layout (16) {
+	.full-width {
+		@include grid-span(16,1);	
+		@include clearfix;
+		clear: both;
+		float: none;			
+	}
+	.normal-width {
+		@include grid-span(12,3);
+		clear: both;
+		float: none;			
+	}
+	.smaller-width {
+		@include grid-span(8,5);
+		clear: both;
+		float: none;
+		border: 4px solid red;
+	}
+}

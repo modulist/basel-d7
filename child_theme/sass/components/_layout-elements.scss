@@ -1,0 +1,34 @@
+body {
+	background-color: $body-bg;
+}
+
+#branding-first {
+	@include clearfix;
+	padding: 0 0 $page-outside-margin-vert/2;
+	#logo {
+		float: left;
+	}
+	#site-name {
+		font-size: 40px;
+		font-weight: 300;
+		float: left;
+		padding: 68px 0 0 30px;
+	}
+}
+
+#footer-wrapper {
+	background-color: $footer-bg !important;
+	padding: 0 0 8em;
+	a {
+		color: $body-text;
+	}
+}
+//#footer-columns {
+//	@include grid-span(12, 1, 8); // columns in parent grid, starting at, columns in child grid
+//}
+.footer-column {
+	@extend .col-1;
+}
+footer h2 {
+	margin-top: -30px;
+}

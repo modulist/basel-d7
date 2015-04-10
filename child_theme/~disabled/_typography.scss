@@ -1,0 +1,142 @@
+// font specs specific to the Selva Verde theme go here
+
+/* Contents
+	- generic type styles
+	- topbar type specs
+	- masthead area
+	- main menu
+	- content area
+*/
+
+.green-caps {
+			color: $brand-color-2;
+			font-family: 'Avenir Next W01', sans-serif;
+			font-size: 17px;
+			font-weight: 700;
+			text-transform: uppercase;	
+}
+.slab-serif {
+	font-family: 'Newslab W01', serif !important;
+	font-weight: 300 !important;
+}
+.disclaimer {
+	font-size: 12px;
+}
+
+
+// topbar specs
+#topbar {
+	color: #fff;
+	line-height: 1em;
+	text-transform: uppercase;
+	a, phone {
+		color: #fff;
+		display: inline-block;
+		padding: 13px 10px; 
+	}
+	.link-catalog,
+	.link-email {
+			display: inline-block;
+			text-align: center;
+		a {
+			color: #000;
+			display: inline-block;
+			font-family: 'Avenir Next W01', sans-serif;
+			font-weight: 700;
+			padding: 6px 10px;
+			strong {
+				font-weight: 400;
+			}
+		}
+	}
+}
+.link-catalog a {
+	background-color: $brand-color-2;	
+}
+.link-email a {
+	background-color: $brand-color-3;
+}
+
+
+
+// main menu area
+#block-system-main-menu {
+	display: inline-block;
+	margin-bottom: 0;
+	ul.menu {
+		li {
+			@extend .green-caps;
+			a:hover {
+				color: $brand-color-2-dark;
+			}
+		}
+	}
+}
+#block-search-form {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+
+
+// masthead area 
+h2.masthead-title {
+	color: #fff;
+	font-family: 'Finlek W00', sans-serif;
+	font-size: 12vw;
+	font-weight: 400;
+	//letter-spacing: -.02em;
+	line-height: 1em;
+}
+
+// round bullet block
+.round-bullet-group {
+	@include clearfix;
+	}
+.round-bullet-block {
+	display: inline-block;
+	margin: 0 4.5%;
+	text-align: center;
+	width: 40%;
+	.round-bullet {
+		background-color: $brand-color-2;
+		border-radius: 3vw;
+		height: 6vw;
+		margin: 0 auto;
+		text-align: center;
+		width: 6vw;
+		
+	}
+	h2 {
+		color: $black;
+		font-size: 30px;
+	}
+}
+
+// more-links
+	.more-link {
+		background: transparent url(../images/sprite-right-arrow.png) right top no-repeat;
+		cursor: pointer;
+		padding-right: 22px;
+		&:hover {
+			background-position: right -100px;
+		}
+		&:active {
+			background-position: right -200px;
+		}
+	}
+
+
+// highlights
+ul.highlights {
+	padding-left: 28px;
+	li {
+		list-style-type: none;
+		text-indent: -28px;
+		&:before {
+			content: url('../images/bullet-arrow-green.png');
+			padding-right: 6px;
+			vertical-align: -4px;	
+		}
+	}
+}

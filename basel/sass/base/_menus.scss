@@ -24,7 +24,7 @@ ul.menu { // exclude Drupal toolbar menu
       padding: $vertmenu-padding-vert ($vertmenu-indent/2);
       &:hover {
         background: $vertmenu-bg-active;
-        color: $vertmenu-text-hover;      
+        color: $vertmenu-text-hover;
       }
       &:active {
         background: $vertmenu-bg-hover;
@@ -44,75 +44,82 @@ ul.menu { // exclude Drupal toolbar menu
 }
 
 // horizontal navigation
-header {
-  ul.menu {
-    background-color: $menu-bg;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    li {
+@media (min-width: $menu-breakpoint) {
+  header {
+    ul.menu {
       background-color: $menu-bg;
-      list-style: none;
       margin: 0;
       padding: 0;
-      position: relative;
-      &.expanded {
-      background: url('/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;        
-      }
-    }
-    a {
-      color: $menu-text;
-      display: block;
-      margin: 0;
-      padding: $menu-padding-vert $menu-padding-horiz;
-      &:hover {
-        background-color: $menu-bg-hover;
-        color: $menu-text-hover;
-        transition: All 0.5s ease;
-      }
-      &.active {
-        background-color: $menu-bg-active;
-        color: $menu-text-active;
-        &:after {
-          content: none;
+      width: 100%;
+      li {
+        background-color: $menu-bg;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        &.expanded {
+        background: url('/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;        
         }
       }
-      /*span.ui-icon-carat-1-e {
-        float: right;
-        position: static;
-        margin-top: 2px;
-        width: 16px;
-        height: 16px;
-        background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;        
-      }*/
-    }
-    > li {
-      float: left;
-    }
-    ul {
-      border: 0;
-      display: block;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      //  top: (2*$menu-padding-vert)+$line-height-headers;
-        z-index: 1000;
-      //visibility: hidden;
-      li {
-        float: none;
+      a {
+        color: $menu-text;
+        display: block;
         margin: 0;
-        //width: $vertmenu-submenu-width;
-        /*ul {
-          position: absolute;
-            left: $vertmenu-submenu-width;
-            top: 0;
+        padding: $menu-padding-vert ($menu-padding-horiz*2) $menu-padding-vert $menu-padding-horiz;
+        &:hover {
+          background-color: $menu-bg-hover;
+          color: $menu-text-hover;
+          transition: All 0.5s ease;
+        }
+        &.active {
+          background-color: $menu-bg-active;
+          color: $menu-text-active;
+          &:after {
+            content: none;
+          }
+        }
+        /*span.ui-icon-carat-1-e {
+          float: right;
+          position: static;
+          margin-top: 2px;
+          width: 16px;
+          height: 16px;
+          background: url('../../../core/assets/vendor/jquery.ui/themes/base/images/ui-icons_888888_256x240png') no-repeat -64px -16px;
         }*/
       }
-    }
-    &:after {
-      @include clearfix;  
+      > li {
+        float: left;
+      }
+      ul {
+        border: 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+          top: ((2*$menu-padding-vert)+$line-height-headers);
+          z-index: 1000;
+        //visibility: hidden;
+        li {
+          float: none;
+          margin: 0;
+          //width: $vertmenu-submenu-width;
+          /*ul {
+            position: absolute;
+              left: $vertmenu-submenu-width;
+              top: 0;
+          }*/
+        }
+      }
+      &:after {
+        @include clearfix;  
+      }
     }
   }
+}
+
+// superfish overrides
+.sf-menu li.sfHover ul {
+  top: ((2*$menu-padding-vert)+$line-height-headers);
 }
 
 // Tabs

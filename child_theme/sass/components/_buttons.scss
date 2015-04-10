@@ -1,0 +1,15 @@
+// custom buttoms for selvaverde theme and overrides of the parent theme
+
+	.more-link {
+		background: transparent url(../images/sprite-right-arrow.png) right top no-repeat;
+		cursor: pointer;
+		padding-right: 22px;
+		&:hover {
+			background-position: right -100px;
+		}
+		&:active {
+			background-position: right -200px;
+		}
+	}
+
+

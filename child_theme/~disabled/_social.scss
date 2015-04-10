@@ -1,0 +1,40 @@
+// social media buttons and components
+
+.block-sharethis {
+	position: fixed;
+		left: 0;
+		top: 30%;
+	cursor: pointer;
+}
+.st_pinterest_custom {
+	background: #cb1f27 url(../images/sprite-sharethis.png) 17px -10px no-repeat;
+	height: 54px;
+	width: 54px;
+	&:hover {
+		background-color: darken(#cb1f27, 5%);
+	}
+}
+.st_facebook_custom {
+	background: #3b5997 url(../images/sprite-sharethis.png) 17px -80px no-repeat;
+	height: 54px;
+	width: 54px;
+	&:hover {
+		background-color: darken(#3b5997, 5%);
+	}
+}
+.st_twitter_custom {
+	background: #00abed url(../images/sprite-sharethis.png) 17px -150px no-repeat;
+	height: 54px;
+	width: 54px;
+	&:hover {
+		background-color: darken(#00abed, 5%);
+	}
+}
+.st_email_custom {
+	background: #b7d107 url(../images/sprite-sharethis.png) 17px -220px no-repeat;
+	height: 54px;
+	width: 54px;
+	&:hover {
+		background-color: darken(#b7d107, 5%);
+	}
+}

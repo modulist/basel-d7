@@ -1,0 +1,58 @@
+// styles for "card" blocks
+
+.card {
+	@include clearfix;
+	background-color: #fff;
+	.card-text {
+		margin: (1.5*$font-size-base);
+	}
+	h2, h3, h4, h5 {
+		margin: 0 0 .25em;
+	}
+	h2.preheader {
+		margin: 0 0 1em;
+	}
+}
+.starting-price .h2 {
+	font-size: 36px;
+	margin: .25em 0;
+}
+
+// tags
+ul.tag-list {
+	padding: 0;
+	margin-left: -10px;
+}
+li.tag {
+	background: url('../images/sprite-tags.png') 0 0 no-repeat;
+	display: inline-block;
+	list-style-type: none;
+	height: 24px;
+	padding: 0 .5em 0 17px;
+	white-space: nowrap;
+	.tag-link {
+		display: inline-table;
+		//height: 24px;
+		line-height: 24px;
+		vertical-align: 8px;
+	}
+	&:hover {
+		background-position: 0 -100px;
+	}
+}
+
+// testimonials
+.testimonial-text {
+	color: $brand-color-3;	
+}
+.testimonial-source-head {
+	color: #000;	
+	font-family: $header-font-family;
+	font-size: 85%;
+	font-weight: 800;
+	text-align: right;
+}
+.testimonial-source-body {
+	font-size: 85%;
+	text-align: right;
+}
