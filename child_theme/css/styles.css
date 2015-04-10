@@ -83,8 +83,8 @@ input[type="submit"]:active {
 /* line 50, ../../basel/sass/base/_buttons.scss */
 .btn-outline:hover {
   background: white;
-  border-color: #005e5d;
-  color: #005e5d;
+  border-color: #63708a;
+  color: #63708a;
 }
 /* line 55, ../../basel/sass/base/_buttons.scss */
 .btn-outline:active {
@@ -170,7 +170,7 @@ input[type="submit"]:active {
 
 /* line 123, ../../basel/sass/base/_buttons.scss */
 .btn-link {
-  color: #00918f;
+  color: #7e8aa2;
   cursor: pointer;
   border-radius: 0;
 }
@@ -284,7 +284,7 @@ select[size] {
 
 /* line 74, ../../basel/sass/base/_forms.scss */
 output {
-  color: #5f5f5f;
+  color: #666666;
   display: block;
   font-size: 14px;
   line-height: 1.15em;
@@ -323,10 +323,10 @@ textarea,
   background: #eeeeee;
   background-clip: padding-box;
   background-image: none;
-  background-text: #929292;
+  background-text: #999999;
   border: none;
   border-radius: 4px;
-  color: #5f5f5f;
+  color: #666666;
   font-size: 12.6px;
   line-height: 1.15em;
   max-width: 30em;
@@ -558,7 +558,7 @@ textarea.form-control {
 /* line 258, ../../basel/sass/base/_forms.scss */
 input:focus {
   background: #dddddd;
-  color: #5f5f5f;
+  color: #666666;
   outline: none;
 }
 
@@ -649,7 +649,7 @@ detail:focus {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #9f9f9f;
+  color: #a6a6a6;
 }
 
 /*
@@ -786,7 +786,7 @@ detail:focus {
 }
 
 /* line 13, ../../basel/sass/base/_grids.scss */
-.alpha, body.front #block-system-main, .first, no-left-margin {
+.alpha, .first, no-left-margin {
   margin-left: 0 !important;
 }
 
@@ -1157,7 +1157,7 @@ detail:focus {
 }
 @media (min-width: 768px) {
   /* line 46, ../../basel/sass/base/_grids.scss */
-  .col-sm-6, body.front #block-system-main {
+  .col-sm-6 {
     width: 49.15254%;
     clear: right;
     float: left;
@@ -1166,7 +1166,7 @@ detail:focus {
     float: left;
   }
   /* line 49, ../../basel/sass/base/_grids.scss */
-  .col-sm-6:last-child, body.front #block-system-main:last-child {
+  .col-sm-6:last-child {
     margin-right: 0;
   }
 }
@@ -1684,19 +1684,19 @@ ul.menu li.leaf {
 }
 /* line 20, ../../basel/sass/base/_menus.scss */
 ul.menu li a {
-  color: #00918f;
+  color: #7e8aa2;
   display: block;
   margin-left: -0.625em;
   padding: 0.33em 0.625em;
 }
 /* line 25, ../../basel/sass/base/_menus.scss */
 ul.menu li a:hover {
-  background: #063269;
-  color: #005e5d;
+  background: #ffad33;
+  color: #63708a;
 }
 /* line 29, ../../basel/sass/base/_menus.scss */
 ul.menu li a:active {
-  background: #08499a;
+  background: #ffc166;
   color: #990000;
 }
 /* line 33, ../../basel/sass/base/_menus.scss */
@@ -1715,14 +1715,14 @@ ul.menu .expanded, ul.menu .collapsed {
 @media (min-width: 40em) {
   /* line 49, ../../basel/sass/base/_menus.scss */
   header ul.menu {
-    background-color: #f31111;
+    background-color: #7e8aa2;
     margin: 0;
     padding: 0;
     width: 100%;
   }
   /* line 54, ../../basel/sass/base/_menus.scss */
   header ul.menu li {
-    background-color: #f31111;
+    background-color: #7e8aa2;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1749,14 +1749,14 @@ ul.menu .expanded, ul.menu .collapsed {
   }
   /* line 69, ../../basel/sass/base/_menus.scss */
   header ul.menu a:hover {
-    background-color: #b7d107;
+    background-color: #263248;
     color: white;
     -webkit-transition: All 0.5s ease;
             transition: All 0.5s ease;
   }
   /* line 74, ../../basel/sass/base/_menus.scss */
   header ul.menu a.active {
-    background-color: #f57f25;
+    background-color: #ff9800;
     color: white;
   }
   /* line 77, ../../basel/sass/base/_menus.scss */
@@ -1828,19 +1828,19 @@ ul.primary > li {
 /* line 136, ../../basel/sass/base/_menus.scss */
 ul.primary > li > a {
   background: #ddd;
-  color: #00918f;
+  color: #7e8aa2;
   margin-right: 2px;
   line-height: 1.5em;
   border-radius: 4px 4px 0 0;
 }
 /* line 143, ../../basel/sass/base/_menus.scss */
 ul.primary > li > a:hover {
-  color: #005e5d;
+  color: #63708a;
 }
 /* line 151, ../../basel/sass/base/_menus.scss */
 ul.primary > li.active > a, ul.primary > li.active > a:hover, ul.primary > li.active > a:focus {
   color: white;
-  background-color: #b7d107;
+  background-color: #263248;
   border: none;
   cursor: default;
 }
@@ -1947,7 +1947,7 @@ table.no-style td:last-child, table.no-style th:last-child {
 html, body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #5f5f5f;
+  color: #666666;
 }
 
 /* line 8, ../../basel/sass/base/_typography-core.scss */
@@ -1962,12 +1962,12 @@ p strong {
 
 /* line 16, ../../basel/sass/base/_typography-core.scss */
 a {
-  color: #00918f;
+  color: #7e8aa2;
   text-decoration: none;
 }
 /* line 19, ../../basel/sass/base/_typography-core.scss */
 a:hover {
-  color: #005e5d;
+  color: #63708a;
 }
 /* line 22, ../../basel/sass/base/_typography-core.scss */
 a:active {
@@ -2076,6 +2076,71 @@ sub, sup {
   transition: height 0.35s ease;
 }
 
+/* line 1, ../sass/components/_block-colors.scss */
+header {
+  background-color: #242424;
+  color: #fff;
+}
+/* line 4, ../sass/components/_block-colors.scss */
+header a {
+  color: #fff;
+}
+/* line 6, ../sass/components/_block-colors.scss */
+header a:hover {
+  color: #ff9800;
+}
+
+/* line 12, ../sass/components/_block-colors.scss */
+.block.brand-color-1 {
+  background-color: #242424;
+  color: #999;
+}
+/* line 15, ../sass/components/_block-colors.scss */
+.block.brand-color-1 h2, .block.brand-color-1 h1.h2, .block.brand-color-1 h3.h2, .block.brand-color-1 h4.h2, .block.brand-color-1 h3, .block.brand-color-1 h1.h3, .block.brand-color-1 h2.h3, .block.brand-color-1 h4.h3.h2, .block.brand-color-1 h4, .block.brand-color-1 h2.h4, .block.brand-color-1 h1.h4.h2, .block.brand-color-1 h3.h4, .block.brand-color-1 h1.h4.h3, .block.brand-color-1 footer h2, footer .block.brand-color-1 h2, .block.brand-color-1 footer h1.h2, footer .block.brand-color-1 h1.h2, .block.brand-color-1 footer h3.h2, footer .block.brand-color-1 h3.h2, .block.brand-color-1 h5, .block.brand-color-1 h2.h5, .block.brand-color-1 h1.h5.h2, .block.brand-color-1 h3.h5, .block.brand-color-1 h1.h5.h3, .block.brand-color-1 h4.h5, .block.brand-color-1 h6, .block.brand-color-1 h3.h6, .block.brand-color-1 h1.h6.h3, .block.brand-color-1 h2.h6.h3, .block.brand-color-1 h4.h6, .block.brand-color-1 h2.h6.h4, .block.brand-color-1 h1.h6.h4.h2, .block.brand-color-1 footer h2.h6, footer .block.brand-color-1 h2.h6, .block.brand-color-1 footer h1.h6.h2, footer .block.brand-color-1 h1.h6.h2, .block.brand-color-1 h5.h6, .block.brand-color-1 h2.h6.h5, .block.brand-color-1 h1.h6.h5.h2, .block.brand-color-1 strong {
+  color: #fff;
+}
+
+/* line 19, ../sass/components/_block-colors.scss */
+.block.brand-color-2 {
+  background-color: #263248;
+  color: #999;
+}
+/* line 22, ../sass/components/_block-colors.scss */
+.block.brand-color-2 h2, .block.brand-color-2 h1.h2, .block.brand-color-2 h3.h2, .block.brand-color-2 h4.h2, .block.brand-color-2 h3, .block.brand-color-2 h1.h3, .block.brand-color-2 h2.h3, .block.brand-color-2 h4.h3.h2, .block.brand-color-2 h4, .block.brand-color-2 h2.h4, .block.brand-color-2 h1.h4.h2, .block.brand-color-2 h3.h4, .block.brand-color-2 h1.h4.h3, .block.brand-color-2 footer h2, footer .block.brand-color-2 h2, .block.brand-color-2 footer h1.h2, footer .block.brand-color-2 h1.h2, .block.brand-color-2 footer h3.h2, footer .block.brand-color-2 h3.h2, .block.brand-color-2 h5, .block.brand-color-2 h2.h5, .block.brand-color-2 h1.h5.h2, .block.brand-color-2 h3.h5, .block.brand-color-2 h1.h5.h3, .block.brand-color-2 h4.h5, .block.brand-color-2 h6, .block.brand-color-2 h3.h6, .block.brand-color-2 h1.h6.h3, .block.brand-color-2 h2.h6.h3, .block.brand-color-2 h4.h6, .block.brand-color-2 h2.h6.h4, .block.brand-color-2 h1.h6.h4.h2, .block.brand-color-2 footer h2.h6, footer .block.brand-color-2 h2.h6, .block.brand-color-2 footer h1.h6.h2, footer .block.brand-color-2 h1.h6.h2, .block.brand-color-2 h5.h6, .block.brand-color-2 h2.h6.h5, .block.brand-color-2 h1.h6.h5.h2, .block.brand-color-2 strong {
+  color: #fff;
+}
+
+/* line 26, ../sass/components/_block-colors.scss */
+.block.brand-color-3 {
+  background-color: #ff9800;
+  color: #7e3f00;
+}
+/* line 29, ../sass/components/_block-colors.scss */
+.block.brand-color-3 h2, .block.brand-color-3 h1.h2, .block.brand-color-3 h3.h2, .block.brand-color-3 h4.h2, .block.brand-color-3 h3, .block.brand-color-3 h1.h3, .block.brand-color-3 h2.h3, .block.brand-color-3 h4.h3.h2, .block.brand-color-3 h4, .block.brand-color-3 h2.h4, .block.brand-color-3 h1.h4.h2, .block.brand-color-3 h3.h4, .block.brand-color-3 h1.h4.h3, .block.brand-color-3 footer h2, footer .block.brand-color-3 h2, .block.brand-color-3 footer h1.h2, footer .block.brand-color-3 h1.h2, .block.brand-color-3 footer h3.h2, footer .block.brand-color-3 h3.h2, .block.brand-color-3 h5, .block.brand-color-3 h2.h5, .block.brand-color-3 h1.h5.h2, .block.brand-color-3 h3.h5, .block.brand-color-3 h1.h5.h3, .block.brand-color-3 h4.h5, .block.brand-color-3 h6, .block.brand-color-3 h3.h6, .block.brand-color-3 h1.h6.h3, .block.brand-color-3 h2.h6.h3, .block.brand-color-3 h4.h6, .block.brand-color-3 h2.h6.h4, .block.brand-color-3 h1.h6.h4.h2, .block.brand-color-3 footer h2.h6, footer .block.brand-color-3 h2.h6, .block.brand-color-3 footer h1.h6.h2, footer .block.brand-color-3 h1.h6.h2, .block.brand-color-3 h5.h6, .block.brand-color-3 h2.h6.h5, .block.brand-color-3 h1.h6.h5.h2, .block.brand-color-3 strong {
+  color: #000;
+  font-weight: 400;
+}
+
+/* line 34, ../sass/components/_block-colors.scss */
+.block.brand-color-4 {
+  background-color: white;
+}
+
+/* line 41, ../sass/components/_block-colors.scss */
+.block.brand-color-5 {
+  background-color: #7e8aa2;
+  color: #aaa;
+}
+/* line 44, ../sass/components/_block-colors.scss */
+.block.brand-color-5 h2, .block.brand-color-5 h1.h2, .block.brand-color-5 h3.h2, .block.brand-color-5 h4.h2, .block.brand-color-5 h3, .block.brand-color-5 h1.h3, .block.brand-color-5 h2.h3, .block.brand-color-5 h4.h3.h2, .block.brand-color-5 h4, .block.brand-color-5 h2.h4, .block.brand-color-5 h1.h4.h2, .block.brand-color-5 h3.h4, .block.brand-color-5 h1.h4.h3, .block.brand-color-5 footer h2, footer .block.brand-color-5 h2, .block.brand-color-5 footer h1.h2, footer .block.brand-color-5 h1.h2, .block.brand-color-5 footer h3.h2, footer .block.brand-color-5 h3.h2, .block.brand-color-5 h5, .block.brand-color-5 h2.h5, .block.brand-color-5 h1.h5.h2, .block.brand-color-5 h3.h5, .block.brand-color-5 h1.h5.h3, .block.brand-color-5 h4.h5, .block.brand-color-5 h6, .block.brand-color-5 h3.h6, .block.brand-color-5 h1.h6.h3, .block.brand-color-5 h2.h6.h3, .block.brand-color-5 h4.h6, .block.brand-color-5 h2.h6.h4, .block.brand-color-5 h1.h6.h4.h2, .block.brand-color-5 footer h2.h6, footer .block.brand-color-5 h2.h6, .block.brand-color-5 footer h1.h6.h2, footer .block.brand-color-5 h1.h6.h2, .block.brand-color-5 h5.h6, .block.brand-color-5 h2.h6.h5, .block.brand-color-5 h1.h6.h5.h2, .block.brand-color-5 strong {
+  color: #fff;
+}
+
+/* line 49, ../sass/components/_block-colors.scss */
+.centered {
+  text-align: center;
+}
+
 /* line 3, ../sass/components/_buttons.scss */
 .more-link {
   background: transparent url(../images/sprite-right-arrow.png) right top no-repeat;
@@ -2151,7 +2216,7 @@ li.tag:hover {
 
 /* line 45, ../sass/components/_cards.scss */
 .testimonial-text {
-  color: #00918f;
+  color: #ff9800;
 }
 
 /* line 48, ../sass/components/_cards.scss */
@@ -2169,88 +2234,47 @@ li.tag:hover {
   text-align: right;
 }
 
-/* line 4, ../sass/components/_front.scss */
-body.front h1, body.front h2.h1, body.front h4.h1.h2, body.front h3.h1 {
-  display: none;
-}
-/* line 7, ../sass/components/_front.scss */
-body.front main,
-body.front #main,
-body.front #main-wrapper {
-  margin: 0;
-  width: 100%;
-}
-/* line 13, ../sass/components/_front.scss */
-body.front #content {
-  background-color: #fff;
-  padding: 30px 10%;
-  width: 100%;
-}
-
-/* line 28, ../sass/components/_front.scss */
-.block-interests .interests-item {
-  float: left;
-  margin: 0;
-  width: 33.333%;
-}
-/* line 33, ../sass/components/_front.scss */
-.block-interests h2.interests-title, .block-interests h1.interests-title.h2, .block-interests h3.interests-title.h2, .block-interests h4.interests-title.h2 {
-  color: #fff;
-  display: block;
-  font-family: 'Finlek W00', sans-serif;
-  font-size: 3.5vw;
-  font-weight: 400;
-  line-height: 1em;
-  margin-top: -15vw;
-  margin-bottom: 0;
-  padding: 1em;
-  position: absolute;
-  text-align: center;
-  text-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
-  width: 33.33%;
-  z-index: 2;
-}
-/* line 49, ../sass/components/_front.scss */
-.block-interests .interests-bg {
-  width: 100%;
-}
-
 /* line 1, ../sass/components/_layout-elements.scss */
 body {
   background-color: white;
 }
 
 /* line 5, ../sass/components/_layout-elements.scss */
-main .block-block {
-  display: block;
-  margin: 0 !important;
-  padding: 30px;
-  width: 100%;
+#branding-first {
+  padding: 0 0 15px;
 }
-/* line 10, ../sass/components/_layout-elements.scss */
-main .block-block:nth-child(3n) {
-  background: #fff;
+/* line 3, ../../basel/sass/base/__mixins.scss */
+#branding-first:before, #branding-first:after {
+  content: " ";
+  display: table;
 }
-/* line 13, ../sass/components/_layout-elements.scss */
-main .block-block:nth-child(3n+1) {
-  background: #666;
+/* line 8, ../../basel/sass/base/__mixins.scss */
+#branding-first:after {
+  clear: both;
 }
-/* line 16, ../sass/components/_layout-elements.scss */
-main .block-block:nth-child(3n+2) {
-  background: #242424;
+/* line 8, ../sass/components/_layout-elements.scss */
+#branding-first #logo {
+  float: left;
+}
+/* line 11, ../sass/components/_layout-elements.scss */
+#branding-first #site-name {
+  font-size: 40px;
+  font-weight: 300;
+  float: left;
+  padding: 68px 0 0 30px;
 }
 
-/* line 21, ../sass/components/_layout-elements.scss */
+/* line 19, ../sass/components/_layout-elements.scss */
 #footer-wrapper {
   background-color: #dfdfdf !important;
   padding: 0 0 8em;
 }
-/* line 24, ../sass/components/_layout-elements.scss */
+/* line 22, ../sass/components/_layout-elements.scss */
 #footer-wrapper a {
-  color: #5f5f5f;
+  color: #666666;
 }
 
-/* line 34, ../sass/components/_layout-elements.scss */
+/* line 32, ../sass/components/_layout-elements.scss */
 footer h2, footer h1.h2, footer h3.h2, footer h4.h2, footer h2.h2 {
   margin-top: -30px;
 }
@@ -2266,11 +2290,6 @@ body {
 /* line 11, ../sass/layouts/layouts/_page.layout.scss */
 #page {
   /* Uncomment background-grid to view grid */
-}
-/* line 13, ../sass/layouts/layouts/_page.layout.scss */
-#page #main-wrapper, #page #footer-top, #page #footer-bottom {
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 102, 0.07) 0%, rgba(102, 102, 102, 0.07) 5.17241%, rgba(239, 239, 239, 0.3025) 5.17241%, rgba(239, 239, 239, 0.3025) 8.62069%, rgba(102, 102, 102, 0.07) 8.62069%, rgba(102, 102, 102, 0.07) 13.7931%, rgba(239, 239, 239, 0.3025) 13.7931%, rgba(239, 239, 239, 0.3025) 17.24138%, rgba(102, 102, 102, 0.07) 17.24138%, rgba(102, 102, 102, 0.07) 22.41379%, rgba(239, 239, 239, 0.3025) 22.41379%, rgba(239, 239, 239, 0.3025) 25.86207%, rgba(102, 102, 102, 0.07) 25.86207%, rgba(102, 102, 102, 0.07) 31.03448%, rgba(239, 239, 239, 0.3025) 31.03448%, rgba(239, 239, 239, 0.3025) 34.48276%, rgba(102, 102, 102, 0.07) 34.48276%, rgba(102, 102, 102, 0.07) 39.65517%, rgba(239, 239, 239, 0.3025) 39.65517%, rgba(239, 239, 239, 0.3025) 43.10345%, rgba(102, 102, 102, 0.07) 43.10345%, rgba(102, 102, 102, 0.07) 48.27586%, rgba(239, 239, 239, 0.3025) 48.27586%, rgba(239, 239, 239, 0.3025) 51.72414%, rgba(102, 102, 102, 0.07) 51.72414%, rgba(102, 102, 102, 0.07) 56.89655%, rgba(239, 239, 239, 0.3025) 56.89655%, rgba(239, 239, 239, 0.3025) 60.34483%, rgba(102, 102, 102, 0.07) 60.34483%, rgba(102, 102, 102, 0.07) 65.51724%, rgba(239, 239, 239, 0.3025) 65.51724%, rgba(239, 239, 239, 0.3025) 68.96552%, rgba(102, 102, 102, 0.07) 68.96552%, rgba(102, 102, 102, 0.07) 74.13793%, rgba(239, 239, 239, 0.3025) 74.13793%, rgba(239, 239, 239, 0.3025) 77.58621%, rgba(102, 102, 102, 0.07) 77.58621%, rgba(102, 102, 102, 0.07) 82.75862%, rgba(239, 239, 239, 0.3025) 82.75862%, rgba(239, 239, 239, 0.3025) 86.2069%, rgba(102, 102, 102, 0.07) 86.2069%, rgba(102, 102, 102, 0.07) 91.37931%, rgba(239, 239, 239, 0.3025) 91.37931%, rgba(239, 239, 239, 0.3025) 94.82759%, rgba(102, 102, 102, 0.07) 94.82759%, rgba(102, 102, 102, 0.07));
-  background-image: linear-gradient(to right, rgba(102, 102, 102, 0.07) 0%, rgba(102, 102, 102, 0.07) 5.17241%, rgba(239, 239, 239, 0.3025) 5.17241%, rgba(239, 239, 239, 0.3025) 8.62069%, rgba(102, 102, 102, 0.07) 8.62069%, rgba(102, 102, 102, 0.07) 13.7931%, rgba(239, 239, 239, 0.3025) 13.7931%, rgba(239, 239, 239, 0.3025) 17.24138%, rgba(102, 102, 102, 0.07) 17.24138%, rgba(102, 102, 102, 0.07) 22.41379%, rgba(239, 239, 239, 0.3025) 22.41379%, rgba(239, 239, 239, 0.3025) 25.86207%, rgba(102, 102, 102, 0.07) 25.86207%, rgba(102, 102, 102, 0.07) 31.03448%, rgba(239, 239, 239, 0.3025) 31.03448%, rgba(239, 239, 239, 0.3025) 34.48276%, rgba(102, 102, 102, 0.07) 34.48276%, rgba(102, 102, 102, 0.07) 39.65517%, rgba(239, 239, 239, 0.3025) 39.65517%, rgba(239, 239, 239, 0.3025) 43.10345%, rgba(102, 102, 102, 0.07) 43.10345%, rgba(102, 102, 102, 0.07) 48.27586%, rgba(239, 239, 239, 0.3025) 48.27586%, rgba(239, 239, 239, 0.3025) 51.72414%, rgba(102, 102, 102, 0.07) 51.72414%, rgba(102, 102, 102, 0.07) 56.89655%, rgba(239, 239, 239, 0.3025) 56.89655%, rgba(239, 239, 239, 0.3025) 60.34483%, rgba(102, 102, 102, 0.07) 60.34483%, rgba(102, 102, 102, 0.07) 65.51724%, rgba(239, 239, 239, 0.3025) 65.51724%, rgba(239, 239, 239, 0.3025) 68.96552%, rgba(102, 102, 102, 0.07) 68.96552%, rgba(102, 102, 102, 0.07) 74.13793%, rgba(239, 239, 239, 0.3025) 74.13793%, rgba(239, 239, 239, 0.3025) 77.58621%, rgba(102, 102, 102, 0.07) 77.58621%, rgba(102, 102, 102, 0.07) 82.75862%, rgba(239, 239, 239, 0.3025) 82.75862%, rgba(239, 239, 239, 0.3025) 86.2069%, rgba(102, 102, 102, 0.07) 86.2069%, rgba(102, 102, 102, 0.07) 91.37931%, rgba(239, 239, 239, 0.3025) 91.37931%, rgba(239, 239, 239, 0.3025) 94.82759%, rgba(102, 102, 102, 0.07) 94.82759%, rgba(102, 102, 102, 0.07));
 }
 
 /* specify columns using grid-span($span,$location) syntax
@@ -2308,8 +2327,8 @@ body {
   }
 
   /* line 31, ../sass/layouts/layouts/_page.layout.scss */
-  .front main,
-  .not-front.no-sidebars main {
+  .not-front.no-sidebars main,
+  .front.no-sidebars main {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 100%;
     float: right;
@@ -2331,9 +2350,7 @@ body {
 
   /* line 39, ../sass/layouts/layouts/_page.layout.scss */
   .not-front.no-sidebars #content,
-  .not-front.no-sidebars #content-bottom,
-  .front #content,
-  .front #content-bottom {
+  .not-front.no-sidebars #content-bottom {
     -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 100%;
     float: right;
@@ -2342,7 +2359,7 @@ body {
     clear: none;
   }
 
-  /* line 45, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 43, ../sass/layouts/layouts/_page.layout.scss */
   .region-sidebar-first {
     -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2352,7 +2369,7 @@ body {
     clear: none;
   }
 
-  /* line 48, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 46, ../sass/layouts/layouts/_page.layout.scss */
   .region-sidebar-second {
     -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2362,7 +2379,7 @@ body {
     clear: none;
   }
 
-  /* line 51, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 49, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-first {
     -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2372,7 +2389,7 @@ body {
     clear: none;
   }
 
-  /* line 54, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 52, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-second {
     -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2382,7 +2399,7 @@ body {
     clear: none;
   }
 
-  /* line 57, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 55, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-third {
     -sgs-span-settings: ("span": 3, "location": 7, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2392,7 +2409,7 @@ body {
     clear: none;
   }
 
-  /* line 60, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 58, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-fourth {
     -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2402,7 +2419,7 @@ body {
     clear: none;
   }
 
-  /* line 63, ../sass/layouts/layouts/_page.layout.scss */
+  /* line 61, ../sass/layouts/layouts/_page.layout.scss */
   .region-footer-bottom {
     -sgs-span-settings: ("span": 3, "location": 4, "grid": 12, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
     width: 22.41379%;
@@ -2412,56 +2429,73 @@ body {
     clear: none;
   }
 }
-/* line 68, ../sass/layouts/layouts/_page.layout.scss */
+/* line 66, ../sass/layouts/layouts/_page.layout.scss */
 header {
-  padding: 0 5% 0;
+  padding: 30px 15% 0;
 }
 
-/* line 71, ../sass/layouts/layouts/_page.layout.scss */
+/* line 70, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper {
   padding-bottom: 4em;
 }
 
-/* line 74, ../sass/layouts/layouts/_page.layout.scss */
+/* line 73, ../sass/layouts/layouts/_page.layout.scss */
 .no-sidebars #main-wrapper {
   margin: 0;
 }
 
-/* line 77, ../sass/layouts/layouts/_page.layout.scss */
+/* line 76, ../sass/layouts/layouts/_page.layout.scss */
 #footer-wrapper {
-  background: #063269;
+  background: #3e3e3e;
   padding: 2em 0 8em;
 }
 
-/* line 81, ../sass/layouts/layouts/_page.layout.scss */
+/* line 80, ../sass/layouts/layouts/_page.layout.scss */
 #messages,
 #main-wrapper,
 footer {
-  margin: 0 5%;
+  margin: 30px 15%;
 }
 
-/* line 86, ../sass/layouts/layouts/_page.layout.scss */
+/* line 85, ../sass/layouts/layouts/_page.layout.scss */
 main .block {
   margin-bottom: 30px;
 }
 
-/* line 89, ../sass/layouts/layouts/_page.layout.scss */
+/* line 88, ../sass/layouts/layouts/_page.layout.scss */
 .no-sidebars main .block {
-  padding: 30px 5%;
+  padding: 30px 15%;
   margin-bottom: 0;
 }
-
+/* line 91, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars main .block.full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* line 95, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars main .block.thin {
+  padding: 30px 22.5%;
+}
+/* line 98, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars main .block.thinner {
+  padding: 30px 30%;
+}
+/* line 101, ../sass/layouts/layouts/_page.layout.scss */
+.no-sidebars main .block.thinnest {
+  padding: 30px 37.5%;
+}
+
+/* line 107, ../sass/layouts/layouts/_page.layout.scss */
 .no-sidebars #breadcrumb,
 .no-sidebars #page-title,
 .no-sidebars .tabs,
 .no-sidebars .messages {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* normalize header margins in all three columns */
-/* line 105, ../sass/layouts/layouts/_page.layout.scss */
+/* line 117, ../sass/layouts/layouts/_page.layout.scss */
 .region-sidebar-first h2:first-child, .region-sidebar-first h1.h2:first-child, .region-sidebar-first h3.h2:first-child, .region-sidebar-first h4.h2:first-child,
 .region-sidebar-second h2:first-child,
 .region-sidebar-second h1.h2:first-child,
@@ -2474,23 +2508,22 @@ h3#page-title.h1 {
   margin-top: 0;
 }
 
-/* line 111, ../sass/layouts/layouts/_page.layout.scss */
+/* line 123, ../sass/layouts/layouts/_page.layout.scss */
 main,
 .region-sidebar-first,
 .region-sidebar-second {
   padding: 0 0 7em;
 }
 
-/* line 116, ../sass/layouts/layouts/_page.layout.scss */
+/* line 128, ../sass/layouts/layouts/_page.layout.scss */
 #main-wrapper.masthead {
   margin-top: -15vw;
   position: relative;
   z-index: 2;
 }
 
-/* line 123, ../sass/layouts/layouts/_page.layout.scss */
-.full-width,
-body.front #content .panel-wide {
+/* line 135, ../sass/layouts/layouts/_page.layout.scss */
+.full-width {
   -sgs-span-settings: ("span": 16, "location": 1, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
   width: 100%;
   float: right;
@@ -2501,19 +2534,16 @@ body.front #content .panel-wide {
   float: none;
 }
 /* line 3, ../../basel/sass/base/__mixins.scss */
-.full-width:before, .full-width:after,
-body.front #content .panel-wide:before,
-body.front #content .panel-wide:after {
+.full-width:before, .full-width:after {
   content: " ";
   display: table;
 }
 /* line 8, ../../basel/sass/base/__mixins.scss */
-.full-width:after,
-body.front #content .panel-wide:after {
+.full-width:after {
   clear: both;
 }
 
-/* line 130, ../sass/layouts/layouts/_page.layout.scss */
+/* line 141, ../sass/layouts/layouts/_page.layout.scss */
 .normal-width {
   -sgs-span-settings: ("span": 12, "location": 3, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
   width: 74.35897%;
@@ -2525,9 +2555,8 @@ body.front #content .panel-wide:after {
   float: none;
 }
 
-/* line 135, ../sass/layouts/layouts/_page.layout.scss */
-.smaller-width,
-body.front #content .panel-thin {
+/* line 146, ../sass/layouts/layouts/_page.layout.scss */
+.smaller-width {
   -sgs-span-settings: ("span": 8, "location": 5, "grid": 16, "gutter": 0.66667, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
   width: 48.71795%;
   float: left;
