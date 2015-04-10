@@ -7,43 +7,43 @@ $body-bg:												#fff;
 $footer-bg:											#dfdfdf;
 
 // Brand colors
-$brand-color-1: 								#031b39; // navy blue
+$brand-color-1: 								#242424; // charcoal
 $brand-color-1-dark:						darken($brand-color-1, 10%);
 $brand-color-1-light:						lighten($brand-color-1, 10%);
-$navy:													$brand-color-1;
+$charcoal:											$brand-color-1;
 
-$brand-color-2: 								#00918f;  // dark green
+$brand-color-2: 								#263248;  // dark blue
 $brand-color-2-dark:						darken($brand-color-2, 10%);
 $brand-color-2-light:						lighten($brand-color-2, 10%);
-$green:													$brand-color-2;
+$dark-blue:											$brand-color-2;
 
-$brand-color-3: 								#b7d107; // lime green
+$brand-color-3: 								#ff9800; // marigold
 $brand-color-3-dark:						darken($brand-color-3, 10%);
 $brand-color-3-light:						lighten($brand-color-3, 10%);
-$lime:													$brand-color-3;
+$marigold:											$brand-color-3;
 
-$brand-color-4: 								#f57f25; // orange
+$brand-color-4: 								#fff; // white
 $brand-color-4-dark:						darken($brand-color-4, 10%);
 $brand-color-4-light:						lighten($brand-color-4, 10%);
-$orange:												$brand-color-4;
+$white:													$brand-color-4;
 
-$brand-color-5: 								#f31111; // red
+$brand-color-5: 								#7e8aa2; // light blue
 $brand-color-5-dark:						darken($brand-color-2, 10%);
 $brand-color-5-light:						lighten($brand-color-2, 10%);
-$red:														$brand-color-5;
+$light-blue:										$brand-color-5;
 
 
 //Font colors
-$body-text:											#5f5f5f;
+$body-text:											#666;
 $header-text:										#000;
-$link-text:											$brand-color-2;
+$link-text:											$brand-color-5;
 $link-text-hover:								darken($link-text, 10%);
 $link-text-active:							#900;
 
 //Menu colors
 $menu-bg:												$brand-color-5;
-$menu-bg-active:								$brand-color-4;
-$menu-bg-hover:									$brand-color-3; //darken($menu-bg, 20%); 
+$menu-bg-active:								$brand-color-3;
+$menu-bg-hover:									$brand-color-2; //darken($menu-bg, 20%); 
 $menu-text:											$white;  //default is white
 $menu-text-active:							$white;
 $menu-text-hover:								$white; 
@@ -51,8 +51,8 @@ $vertmenu-text:									$link-text;  //default is $link-text
 $vertmenu-text-active:					$link-text-active;  //default is $link-text-active
 $vertmenu-text-hover:						$link-text-hover;  //default is $link-text-hover
 $vertmenu-bg:										transparent;
-$vertmenu-bg-active:						lighten($brand-color-1, 10%);
-$vertmenu-bg-hover:							lighten($brand-color-1, 20%);
+$vertmenu-bg-active:						lighten($brand-color-3, 10%);
+$vertmenu-bg-hover:							lighten($brand-color-3, 20%);
 
 
 // Translucent colors
